@@ -1,0 +1,2804 @@
+{
+  "accounts": {
+    "title": "Comptes",
+    "add": "Ajouter un compte",
+    "saving": "Enregistrement…",
+    "empty": {
+      "title": "Ajoutez les comptes que vous souhaitez suivre",
+      "description": "Compte courant, compte épargne, carte de crédit, prêt, placements ou votre logement : chaque compte a son propre solde et ses propres transactions, et ensemble ils forment votre patrimoine net.",
+      "addFirst": "Ajouter votre premier compte",
+      "connectBank": "Connecter une banque"
+    },
+    "sort": {
+      "label": "Trier les comptes",
+      "current": "Tri : {{sort}}",
+      "manual": "Ordre manuel",
+      "editManual": "Modifier l’ordre manuel…",
+      "balanceDesc": {
+        "label": "Solde : du plus élevé au plus bas",
+        "short": "Solde le plus élevé"
+      },
+      "balanceAsc": {
+        "label": "Solde : du plus bas au plus élevé",
+        "short": "Solde le plus bas"
+      },
+      "transactions": {
+        "label": "Plus de transactions",
+        "short": "Plus de transactions"
+      },
+      "name": {
+        "label": "Nom : de A à Z",
+        "short": "Nom"
+      }
+    },
+    "pastMonth": "le mois dernier",
+    "groups": {
+      "cash": "Banque et espèces",
+      "credit": "Crédit",
+      "investments": "Placements",
+      "property": "Biens",
+      "loans": "Prêts",
+      "other": "Autres"
+    },
+    "types": {
+      "checking": {
+        "label": "Compte courant",
+        "hint": "Compte pour les dépenses quotidiennes"
+      },
+      "savings": {
+        "label": "Compte épargne",
+        "hint": "Épargne, dépôts à terme"
+      },
+      "cash": {
+        "label": "Espèces",
+        "hint": "Portefeuille"
+      },
+      "credit": {
+        "label": "Carte de crédit",
+        "hint": "Carte de crédit"
+      },
+      "line_of_credit": {
+        "label": "Crédit renouvelable",
+        "hint": "Crédit renouvelable personnel"
+      },
+      "investment": {
+        "label": "Compte de placement",
+        "hint": "Investir via une banque ou un courtier"
+      },
+      "retirement": {
+        "label": "Retraite",
+        "hint": "Compte retraite"
+      },
+      "crypto": {
+        "label": "Crypto",
+        "hint": "Compte sur une plateforme d’échange crypto ou portefeuille"
+      },
+      "real_estate": {
+        "label": "Immobilier",
+        "hint": "Maison, bien locatif ou terrain"
+      },
+      "vehicle": {
+        "label": "Véhicule",
+        "hint": "Voiture, moto, bateau, camping-car"
+      },
+      "valuables": {
+        "label": "Objets de valeur",
+        "hint": "Bijoux, art, objets de collection, métaux précieux"
+      },
+      "mortgage": {
+        "label": "Prêt immobilier",
+        "hint": "Prêt pour votre logement"
+      },
+      "auto_loan": {
+        "label": "Prêt auto",
+        "hint": "Prêt pour une voiture ou un autre véhicule"
+      },
+      "student_loan": {
+        "label": "Prêt étudiant",
+        "hint": "Prêt étudiant"
+      },
+      "loan": {
+        "label": "Autre prêt",
+        "hint": "Prêt personnel ou prêt familial"
+      },
+      "other_asset": {
+        "label": "Autre actif",
+        "hint": "Tout ce que vous possédez d’autre"
+      },
+      "other_liability": {
+        "label": "Autre dette",
+        "hint": "Tout ce que vous devez d’autre"
+      }
+    },
+    "summary": {
+      "assets": "Actifs",
+      "liabilities": "Dettes",
+      "noAssets": "Pas encore de comptes bancaires, de placements ni d’immobilier.",
+      "noLiabilities": "Pas encore de cartes de crédit ni de prêts.",
+      "add": "Ajouter un compte"
+    },
+    "form": {
+      "name": "Nom du compte",
+      "nameLabel": "Nom du compte",
+      "type": "Type de compte",
+      "typeLabel": "Type de compte",
+      "currency": "Devise",
+      "currencyLocked": "Ne peut plus être modifiée dès que le compte contient des transactions."
+    },
+    "addModal": {
+      "title": "Ajouter un compte",
+      "namePlaceholder": "p. ex. ING Compte courant",
+      "namePlaceholderProperty": "p. ex. Volkswagen Golf 2021",
+      "currencyBecomesBudget": "Ce sera aussi la devise de votre budget.",
+      "currencyForeign": "Les montants restent en {{currency}} ; votre budget les compte en {{budget}} au taux de change de chaque jour.",
+      "chooseCurrency": "Choisissez une devise",
+      "owed": "Montant dû",
+      "owedHint": "Ce que vous devez aujourd’hui.",
+      "value": "Valeur actuelle",
+      "valueHint": "Ce que cela vaut aujourd’hui. Vous pouvez la mettre à jour à tout moment sur la page du compte.",
+      "balance": "Solde actuel",
+      "balanceHint": "Saisissez votre solde d’aujourd’hui.",
+      "offBudget": "Hors budget",
+      "offBudgetHint": "Compte dans votre patrimoine net, mais pas dans votre budget. Recommandé pour les placements, l’immobilier et les prêts.",
+      "adding": "Ajout…",
+      "submit": "Ajouter le compte"
+    },
+    "editModal": {
+      "title": "Modifier le compte",
+      "logo": "Logo",
+      "changeImage": "Changer l’image",
+      "uploadImage": "Téléverser une image",
+      "useInitials": "Utiliser les initiales",
+      "cropped": "Recadrée en carré.",
+      "showingInitials": "Les initiales sont affichées. Téléversez un logo de banque ou une autre image.",
+      "imageError": "Cette image ne peut pas être utilisée.",
+      "iconsOff": "Les icônes de compte sont désactivées dans Paramètres → Préférences.",
+      "currencyFixed": "Les transactions sont dans cette devise, elle ne peut donc pas changer. Vous voulez une autre devise ? Ajoutez un nouveau compte et déplacez l’argent par un virement.",
+      "startingBalance": "Solde initial",
+      "startingBalanceLabel": "Solde initial",
+      "offBudget": "Hors budget (non pris en compte dans la budgétisation)",
+      "close": "Clôturer le compte"
+    },
+    "closeConfirm": {
+      "title": "Clôturer le compte",
+      "message": "Voulez-vous vraiment clôturer \"{{name}}\" ? Le compte disparaîtra de votre liste de comptes.",
+      "confirm": "Clôturer le compte"
+    },
+    "updateValue": {
+      "balanceTitle": "Mettre à jour le solde",
+      "valueTitle": "Mettre à jour la valeur",
+      "owedToday": "Montant dû aujourd’hui",
+      "valueToday": "Valeur aujourd’hui",
+      "current": "Actuellement {{amount}}.",
+      "adds": "Ajoute une correction de <change>{{amount}}</change>, datée d’aujourd’hui.",
+      "balanceNote": "Solde mis à jour",
+      "valueNote": "Valeur mise à jour"
+    },
+    "detail": {
+      "edit": "Modifier",
+      "updateBalance": "Mettre à jour le solde",
+      "updateValue": "Mettre à jour la valeur",
+      "reconcile": "Rapprocher"
+    },
+    "notFound": {
+      "title": "Compte introuvable",
+      "description": "Le compte a peut-être été clôturé ou supprimé, ou le lien est obsolète.",
+      "goToAccounts": "Aller aux comptes"
+    },
+    "reconcile": {
+      "title": "Rapprochement",
+      "heading": "Rapprochement : {{name}}",
+      "enterBalance": "Saisissez le solde final de votre banque",
+      "enterBalanceHint": "Consultez votre application bancaire ou votre banque en ligne pour connaître le solde actuel.",
+      "statementBalance": "Solde selon la banque",
+      "statementBalanceLabel": "Solde selon la banque",
+      "currentSelected": "Solde actuellement sélectionné dans l’application",
+      "start": "Commencer le rapprochement",
+      "columns": {
+        "date": "Date",
+        "payee": "Bénéficiaire",
+        "amount": "Montant",
+        "cleared": "P"
+      },
+      "empty": "Aucune transaction à rapprocher.",
+      "selectedBalance": "Solde sélectionné",
+      "difference": "Écart",
+      "ready": "Prêt à terminer !",
+      "saving": "Enregistrement...",
+      "finish": "Terminer",
+      "createAdjustment": "Créer une correction",
+      "adjustmentNote": "Correction due au rapprochement"
+    },
+    "undo": {
+      "create": "Créer le compte \"{{name}}\"",
+      "edit": "Modifier le compte",
+      "close": "Clôturer le compte \"{{name}}\"",
+      "reorder": "Modifier l’ordre des comptes"
+    }
+  },
+  "auth": {
+    "serverAddress": "Adresse du serveur",
+    "insecure": "<strong>Connexion non sécurisée.</strong> Votre mot de passe serait envoyé sans chiffrement. Ne continuez que sur un réseau de confiance.",
+    "login": {
+      "title": "Se connecter à FlyBudget",
+      "password": "Mot de passe",
+      "submit": "Se connecter"
+    },
+    "setup": {
+      "title": "Configurer votre serveur FlyBudget",
+      "hint": "Créez le mot de passe qui protège ce serveur. Toute personne qui peut y accéder aura besoin de ce mot de passe.",
+      "code": "Code de configuration",
+      "codeHint": "Il figure dans le journal du serveur. Avec Docker, exécutez <code>docker logs flybudget</code>.",
+      "password": "Nouveau mot de passe",
+      "confirm": "Confirmer le mot de passe",
+      "submit": "Créer le mot de passe",
+      "tooShort_one": "Utilisez au moins {{count, number}} caractère.",
+      "tooShort_other": "Utilisez au moins {{count, number}} caractères.",
+      "mismatch": "Les mots de passe ne correspondent pas."
+    }
+  },
+  "banks": {
+    "enableBanking": {
+      "connect": {
+        "title": "Connecter une banque européenne",
+        "reconnectTitle": "Reconnecter {{bank}}",
+        "setupIntro": "FlyBudget se connecte aux banques européennes via votre propre application Enable Banking gratuite. Vous ne la configurez qu’une seule fois :",
+        "reconnectIntro": "Connectez-vous à nouveau à {{bank}} pour donner accès à FlyBudget pour les mois à venir. Vos comptes et leur historique restent tels quels.",
+        "logIn": "Se connecter à votre banque",
+        "opening": "Ouverture de votre banque…",
+        "tryAgain": "Réessayer",
+        "syncing": "Récupération de vos transactions",
+        "syncingHint": "Lors de la première synchronisation, FlyBudget demande tout l’historique à votre banque. Cela peut prendre une minute."
+      },
+      "bankPicker": {
+        "country": "Pays",
+        "chooseCountry": "Choisir…",
+        "bank": "Banque",
+        "search": "Rechercher des banques",
+        "banks": "Banques",
+        "countryFirst": "Choisissez le pays de votre banque.",
+        "noBanks": "Aucune banque à choisir",
+        "noBanksHint": "Les applications Enable Banking gratuites n’affichent que les banques des comptes que vous avez liés. Ouvrez votre application dans le Control Panel d’Enable Banking et liez d’abord vos comptes.",
+        "noMatch": "Aucune banque trouvée pour « {{search}} ».",
+        "beta": "bêta"
+      },
+      "waiting": {
+        "title": "Connectez-vous à votre banque dans votre navigateur",
+        "hint": "La page de votre banque est ouverte dans votre navigateur web. Quand vous aurez terminé, vous serez redirigé et FlyBudget continuera automatiquement.",
+        "ownSite": "Vous vous connectez sur le site de votre banque elle-même, jamais dans FlyBudget.",
+        "reopen": "Rouvrir la banque",
+        "pasteLabel": "Après la connexion, copiez l’adresse complète depuis la barre d’adresse de votre navigateur et collez-la ici :",
+        "continue": "Continuer",
+        "notContinued": "Connecté, mais FlyBudget ne continue pas ?"
+      },
+      "mapping": {
+        "hint": "Choisissez où vont les transactions de chaque compte. Les comptes dans lesquels vous importez déjà des relevés ont été choisis pour vous.",
+        "noAccounts": "Votre banque n’a partagé aucun compte. Vous utilisez une application Enable Banking gratuite ? Liez alors les comptes dans le Control Panel, puis reconnectez-vous.",
+        "save": "Enregistrer et synchroniser",
+        "target": "Destination de {{name}}",
+        "create": "Nouveau compte",
+        "link": "Compte existant",
+        "skip": "Ne pas synchroniser",
+        "nameFor": "Nom pour {{name}}",
+        "accountName": "Nom du compte",
+        "typeOf": "Type de {{name}}",
+        "accountFor": "Compte pour {{name}}",
+        "chooseAccount": "Choisir un compte…",
+        "suggested": "Votre dernier relevé bancaire pour ce compte a été importé ici.",
+        "otherCurrency": "Ce compte bancaire est en {{bankCurrency}}, mais {{account}} est en {{accountCurrency}}. Liez-le à un compte en {{bankCurrency}} ou créez-en un nouveau.",
+        "fullHistory": "Récupérer aussi les transactions plus anciennes que la banque possède. Sans cela, la synchronisation commence une semaine avant la dernière transaction de ce compte. Les transactions que vous avez déjà importées depuis des fichiers sont reconnues dans les deux cas."
+      },
+      "done": {
+        "title": "Banque connectée",
+        "problems": "Connectée, mais avec des problèmes",
+        "added_one": "{{count, number}} transaction récupérée.",
+        "added_other": "{{count, number}} transactions récupérées.",
+        "added_many": "{{count, number}} de transactions récupérées.",
+        "adopted_one": "{{count, number}} transaction que vous aviez déjà (issue de fichiers ou saisie par vos soins) est désormais suivie par la banque.",
+        "adopted_other": "{{count, number}} transactions que vous aviez déjà (issues de fichiers ou saisies par vos soins) sont désormais suivies par la banque.",
+        "adopted_many": "{{count, number}} de transactions que vous aviez déjà (issues de fichiers ou saisies par vos soins) sont désormais suivies par la banque.",
+        "skipped_one": "{{count, number}} transaction ignorée : la banque l’a envoyée sans date ni montant lisible.",
+        "skipped_many": "{{count, number}} de transactions ignorées : la banque les a envoyées sans date ni montant lisible.",
+        "skipped_other": "{{count, number}} transactions ignorées : la banque les a envoyées sans date ni montant lisible.",
+        "skippedOrCurrency_one": "{{count, number}} transaction ignorée : la banque l’a envoyée sans date ni montant lisible, ou dans une autre devise.",
+        "skippedOrCurrency_other": "{{count, number}} transactions ignorées : la banque les a envoyées sans date ni montant lisible, ou dans une autre devise.",
+        "skippedOrCurrency_many": "{{count, number}} de transactions ignorées : la banque les a envoyées sans date ni montant lisible, ou dans une autre devise.",
+        "howItSyncs": "FlyBudget synchronise au démarrage et quand vous cliquez sur Synchroniser maintenant. Les banques n’autorisent que quelques mises à jour automatiques par jour.",
+        "howSyncingWorks": "Comment fonctionne la synchronisation"
+      },
+      "card": {
+        "lastSynced": "Dernière synchronisation {{ago}}",
+        "loginEnded": "L’accès de FlyBudget à votre banque a expiré (les banques demandent de le renouveler tous les quelques mois). Reconnectez-vous pour continuer à synchroniser ; vos comptes et votre historique restent tels quels.",
+        "notLinked": "Non lié",
+        "endsToday": "L’accès à votre banque expire aujourd’hui. Reconnectez-vous pour continuer à synchroniser.",
+        "endsSoon_one": "L’accès à votre banque expire le {{date}} (dans {{count, number}} jour). Reconnectez-vous pour continuer à synchroniser.",
+        "endsSoon_other": "L’accès à votre banque expire le {{date}} (dans {{count, number}} jours). Reconnectez-vous pour continuer à synchroniser.",
+        "endsOn_one": "L’accès à votre banque expire le {{date}} (dans {{count, number}} jour)",
+        "endsOn_other": "L’accès à votre banque expire le {{date}} (dans {{count, number}} jours)",
+        "reconnect": "Reconnecter",
+        "syncing": "Synchronisation…",
+        "syncNow": "Synchroniser maintenant",
+        "disconnect": "Déconnecter",
+        "synced": "Synchronisé : {{added}}.",
+        "syncedSkipped": "Synchronisé : {{added}}, {{skipped}}.",
+        "newTransactions_one": "{{count, number}} nouvelle transaction",
+        "newTransactions_other": "{{count, number}} nouvelles transactions",
+        "newTransactions_many": "{{count, number}} de nouvelles transactions",
+        "leftOut_one": "{{count, number}} ignorée (sans date ou montant illisible)",
+        "leftOut_other": "{{count, number}} ignorées (sans date ou montant illisible)",
+        "disconnectTitle": "Déconnecter {{bank}}",
+        "disconnectMessage": "FlyBudget met fin à l’accès à {{bank}} chez Enable Banking et arrête la synchronisation. Vos comptes et transactions restent dans FlyBudget."
+      },
+      "setup": {
+        "copyRedirectUrl": "Copier l’URL de redirection",
+        "copy": "Copier",
+        "copied": "Copié",
+        "sandbox": "Sandbox",
+        "production": "Production",
+        "yourApplication": "Votre application",
+        "sandboxHint": "Une application Sandbox n’a accès qu’aux banques de test d’Enable Banking. Créez une application Production pour connecter votre vraie banque (pour vos propres comptes, elle est gratuite).",
+        "redirectMissing": "L’URL de redirection ci-dessous ne figure pas encore dans votre application. Ajoutez-la dans le Control Panel d’Enable Banking, sinon votre banque ne pourra pas vous renvoyer vers FlyBudget.",
+        "redirectUrl": "URL de redirection",
+        "replace": "Remplacer l’application",
+        "remove": "Supprimer",
+        "signUp": "Inscrivez-vous sur <controlPanel>Enable Banking <icon/></controlPanel> et créez une application <strong>Production</strong>. Pour vos propres comptes, elle est gratuite.",
+        "addRedirect": "Ajoutez cette URL de redirection à l’application :",
+        "insecureRedirect": "Ce serveur utilise du HTTP simple. Enable Banking exige une URL de redirection en https:// : placez FlyBudget derrière HTTPS (voir le guide d’auto-hébergement), sinon vous devrez recoller l’adresse à la main après chaque connexion à votre banque.",
+        "saveKey": "Conservez le fichier <strong>.pem</strong> que votre navigateur télécharge : c’est la clé privée de l’application et Enable Banking ne peut pas l’afficher à nouveau.",
+        "linkAccounts": "Cliquez sur <strong>Activate by linking accounts</strong> et connectez-vous à votre banque. Les applications gratuites ne peuvent utiliser que les comptes que vous liez, alors liez chaque compte que vous voulez dans FlyBudget.",
+        "enterDetails": "Copiez l’identifiant de l’application et choisissez ci-dessous le fichier .pem.",
+        "applicationId": "Identifiant de l’application",
+        "applicationIdExample": "p. ex. 3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "privateKey": "Clé privée (fichier .pem)",
+        "chooseKey": "Choisir le fichier .pem…",
+        "keyHint": "La clé reste chiffrée dans FlyBudget et ne sert qu’à signer les requêtes envoyées à Enable Banking.",
+        "keyTooBig": "Ce fichier est trop volumineux pour une clé privée. Choisissez le fichier .pem d’Enable Banking.",
+        "notAKey": "Ce fichier n’est pas une clé privée. Choisissez le fichier .pem qu’Enable Banking a téléchargé.",
+        "checking": "Vérification…",
+        "save": "Vérifier et enregistrer",
+        "guide": "Guide pas à pas"
+      },
+      "login": {
+        "expired": "La connexion à la banque a pris trop de temps. Réessayez."
+      }
+    },
+    "status": {
+      "good": "Synchronisé",
+      "syncing": "Synchronisation...",
+      "error": "Erreur",
+      "login_required": "Connexion requise"
+    },
+    "config": {
+      "title": "Configurer la synchronisation bancaire"
+    },
+    "mapping": {
+      "hint": "Choisissez comment configurer chaque compte trouvé.",
+      "createNew": "Créer un nouveau",
+      "linkExisting": "Lier un existant",
+      "skip": "Ignorer",
+      "selectAccount": "Choisir un compte...",
+      "accountName": "Nom du compte",
+      "saveAndSync": "Enregistrer et synchroniser"
+    },
+    "syncing": {
+      "title": "Synchronisation des transactions",
+      "hint": "Vos transactions sont en cours d’importation. Cela peut prendre un moment..."
+    },
+    "done": {
+      "title": "Connexion terminée",
+      "imported": "{{transactions}} importées depuis {{accounts}}.",
+      "transactions_one": "{{count, number}} transaction",
+      "transactions_other": "{{count, number}} transactions",
+      "transactions_many": "{{count, number}} detransactions",
+      "accounts_one": "{{count, number}} compte",
+      "accounts_other": "{{count, number}} comptes"
+    },
+    "card": {
+      "lastSynced": "Dernière synchronisation {{ago}}",
+      "notLinked": "Non lié",
+      "syncing": "Synchronisation...",
+      "syncNow": "Synchroniser maintenant",
+      "disconnect": "Déconnecter"
+    },
+    "plaid": {
+      "connect": {
+        "title": "Connecter un compte bancaire",
+        "heading": "Connectez votre banque",
+        "hint": "Connectez vos comptes bancaires en toute sécurité pour importer automatiquement les transactions et garder vos soldes à jour.",
+        "preparing": "Préparation...",
+        "button": "Connecter une banque"
+      },
+      "waiting": {
+        "title": "Terminez la connexion dans votre navigateur",
+        "hint": "Plaid est ouvert dans votre navigateur web. Connectez-vous-y à votre banque. FlyBudget continuera automatiquement quand vous aurez terminé.",
+        "secure": "Vous saisissez vos données bancaires sur le site sécurisé de Plaid, jamais dans FlyBudget.",
+        "reopen": "Rouvrir Plaid"
+      },
+      "link": {
+        "cancelled": "Connexion annulée.",
+        "expired": "La session Plaid a expiré. Réessayez."
+      },
+      "setup": {
+        "title": "Connexion via Plaid",
+        "heading": "Connexion avec Plaid",
+        "intro": "Créez un <accountLink>compte développeur Plaid</accountLink> gratuit pour obtenir vos identifiants d’API et saisissez-les ci-dessous.",
+        "configured": "Plaid est configuré",
+        "configuredHint": "Vos identifiants sont enregistrés. Vous pouvez maintenant connecter votre banque."
+      },
+      "config": {
+        "hint": "Connectez vos comptes bancaires pour importer automatiquement les transactions via Plaid. Un compte développeur est gratuit et permet toujours jusqu’à 10 connexions bancaires.",
+        "getCredentials": "Obtenir les identifiants Plaid"
+      },
+      "credentials": {
+        "clientId": "Client ID",
+        "clientIdPlaceholder": "Saisissez votre Client ID Plaid",
+        "secret": "Secret",
+        "secretPlaceholder": "Saisissez votre Secret Plaid",
+        "saving": "Enregistrement...",
+        "save": "Enregistrer les identifiants",
+        "error": "L’enregistrement des identifiants a échoué. Vérifiez votre saisie et réessayez."
+      },
+      "environment": {
+        "label": "Environnement",
+        "production": "Production — vos vrais comptes bancaires",
+        "sandbox": "Sandbox — données de test uniquement (pour les développeurs)",
+        "hint": "Utilisez le secret correspondant à cet environnement dans votre tableau de bord Plaid."
+      },
+      "card": {
+        "loginRequired": "Votre banque vous demande de vous authentifier à nouveau. Cliquez sur « Reconnecter » pour mettre à jour vos informations.",
+        "reconnect": "Reconnecter",
+        "synced": "Synchronisé : {{added, number}} ajoutées, {{modified, number}} modifiées, {{removed, number}} supprimées."
+      },
+      "disconnect": {
+        "title": "Déconnecter la banque",
+        "message": "Voulez-vous vraiment déconnecter {{name}} ? Cela révoque l’accès de FlyBudget à cette banque chez Plaid. Vos comptes et transactions existants ne sont pas supprimés."
+      }
+    },
+    "simplefin": {
+      "connect": {
+        "title": "Connexion via SimpleFIN",
+        "heading": "Connexion avec SimpleFIN Bridge",
+        "intro": "Rendez-vous sur <bridgeLink>SimpleFIN Bridge</bridgeLink> pour créer un jeton de configuration et collez-le ci-dessous. SimpleFIN coûte 1,50 $ par mois, à payer directement à SimpleFIN.",
+        "placeholder": "Collez votre jeton de configuration SimpleFIN...",
+        "connecting": "Connexion...",
+        "button": "Connecter",
+        "error": "La connexion a échoué. Vérifiez votre jeton de configuration et réessayez."
+      },
+      "config": {
+        "hint": "Connectez vos comptes bancaires pour importer automatiquement les transactions via SimpleFIN Bridge. Le service coûte 1,50 $ par mois, à payer directement à SimpleFIN.",
+        "getToken": "Obtenir le jeton SimpleFIN",
+        "token": "Jeton de configuration",
+        "placeholder": "Collez votre jeton de configuration SimpleFIN"
+      },
+      "card": {
+        "synced_one": "Synchronisé : {{count, number}} nouvelle transaction importée.",
+        "synced_other": "Synchronisé : {{count, number}} nouvelles transactions importées.",
+        "synced_many": "Synchronisé : {{count, number}} de nouvelles transactions importées."
+      },
+      "disconnect": {
+        "title": "Déconnecter SimpleFIN",
+        "message": "Voulez-vous vraiment déconnecter {{name}} ? FlyBudget supprime l’accès enregistré. Pour le révoquer complètement, supprimez aussi cette application de votre compte SimpleFIN Bridge sur bridge.simplefin.org. Vos comptes et transactions existants ne sont pas supprimés."
+      }
+    }
+  },
+  "budget": {
+    "sheet": {
+      "title": "Planifier {{name}}",
+      "titleFallback": "Planifier",
+      "planned": "Prévu",
+      "plannedFor": "Prévu pour {{name}}",
+      "earnedLastMonth": "Gagné le mois dernier",
+      "spentLastMonth": "Dépensé le mois dernier",
+      "monthlyAverage": "Moyenne par mois",
+      "allYear": "Utiliser ce montant pour les 12 prochains mois"
+    },
+    "phone": {
+      "progress": "{{actual}} sur {{planned}}",
+      "showInactive_one": "Afficher {{count, number}} catégorie inactive",
+      "showInactive_other": "Afficher {{count, number}} catégories inactives",
+      "hideInactive_one": "Masquer {{count, number}} catégorie inactive",
+      "hideInactive_other": "Masquer {{count, number}} catégories inactives",
+      "remaining": "restant",
+      "planned": "Prévu",
+      "plannedFor": "Prévu pour {{name}} : {{amount}}",
+      "received": "Reçu",
+      "spent": "Dépensé"
+    },
+    "undo": {
+      "set": "Définir le budget"
+    },
+    "unreadableAmount": "Ce n’est pas un montant. Saisissez-le sous la forme 12,50 ou 12.50.",
+    "types": {
+      "fixed": {
+        "label": "Fixe",
+        "description": "Montant fixe et prévisible par mois"
+      },
+      "flexible": {
+        "label": "Flexible",
+        "description": "Dépenses variables qui diffèrent chaque mois"
+      },
+      "non_monthly": {
+        "label": "Non mensuel",
+        "description": "Dépenses périodiques ou irrégulières"
+      },
+      "savings": {
+        "label": "Épargne/placements",
+        "description": "Objectifs d’épargne et versements pour les placements"
+      }
+    },
+    "page": {
+      "previousMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "today": "Aujourd’hui",
+      "nothingPlannedTap": "Rien n’est encore prévu pour {{month}}. Touchez un montant dans la colonne <strong>Prévu</strong> pour définir ce que vous comptez gagner et dépenser dans chaque catégorie. Les catégories que vous laissez vides sont masquées dès que vous avez planifié quelque chose.",
+      "nothingPlannedClick": "Rien n’est encore prévu pour {{month}}. Cliquez sur un montant dans la colonne <strong>Prévu</strong> pour définir ce que vous comptez gagner et dépenser dans chaque catégorie. Les catégories que vous laissez vides sont masquées dès que vous avez planifié quelque chose.",
+      "howItWorks": "Comment fonctionne la budgétisation",
+      "income": "Revenus",
+      "expenses": "Dépenses",
+      "planned": "Prévu",
+      "actual": "Réel",
+      "remaining": "Restant",
+      "totalIncome": "Total des revenus",
+      "totalExpenses": "Total des dépenses",
+      "noCategories": "Pas encore de catégories. <settingsLink>Ajoutez-en dans les paramètres</settingsLink>",
+      "plannedFor": "Prévu pour {{name}}",
+      "plannedForAmount": "Prévu pour {{name}} : {{amount}}",
+      "savingPaused": "L’enregistrement est en pause jusqu’à ce que FlyBudget soit de nouveau connecté",
+      "showInactive_one": "Afficher {{count, number}} catégorie inactive",
+      "showInactive_other": "Afficher {{count, number}} catégories inactives",
+      "hideInactive_one": "Masquer {{count, number}} catégorie inactive",
+      "hideInactive_other": "Masquer {{count, number}} catégories inactives"
+    },
+    "popover": {
+      "title": "Historique",
+      "earnedLastMonth": "Gagné le mois dernier",
+      "spentLastMonth": "Dépensé le mois dernier",
+      "monthlyAverage": "Moyenne par mois",
+      "noHistory": "Aucun historique disponible",
+      "applyToFuture": "Appliquer {{amount}} à tous les mois à venir"
+    },
+    "summary": {
+      "toBeBudgeted": "Reste à budgétiser",
+      "overBudget": "Trop budgétisé",
+      "fullyBudgeted": "Entièrement budgétisé",
+      "almostBudgeted": "Presque entièrement budgétisé",
+      "leftToBudget": "Reste à budgétiser",
+      "planned": "{{amount}} prévus",
+      "remaining": "restant",
+      "earned": "gagné",
+      "spent": "dépensé",
+      "contributed": "épargné",
+      "saveUp": "Épargner",
+      "tabs": {
+        "summary": "Aperçu",
+        "income": "Revenus",
+        "expenses": "Dépenses"
+      },
+      "income": "Revenus",
+      "expenses": "Dépenses"
+    },
+    "detail": {
+      "categoryFallback": "Catégorie",
+      "breadcrumb": "Budget",
+      "spendingHistory": "Historique des dépenses",
+      "noHistory": "Aucun historique disponible",
+      "budget": "Budget",
+      "planned": "Prévu",
+      "actual": "Réel",
+      "remaining": "Restant",
+      "summary": "Aperçu",
+      "noData": "Aucune donnée",
+      "totalTransactions": "Nombre total de transactions",
+      "largest": "Plus grosse transaction",
+      "average": "Transaction moyenne",
+      "totalIncome": "Total des revenus",
+      "totalSpending": "Total des dépenses",
+      "first": "Première transaction",
+      "last": "Dernière transaction"
+    }
+  },
+  "cashFlow": {
+    "title": "Flux de trésorerie",
+    "presets": {
+      "thisMonth": "1M",
+      "last3Months": "3M",
+      "last6Months": "6M",
+      "thisYear": "Cette année",
+      "lastYear": "Année dernière",
+      "custom": "Personnalisé"
+    },
+    "exportCsv": "Exporter en CSV",
+    "stats": {
+      "totalIncome": "Total des revenus",
+      "totalExpenses": "Total des dépenses",
+      "netIncome": "Résultat",
+      "savingsRate": "Taux d’épargne"
+    },
+    "node": {
+      "income": "Revenus",
+      "totalIncome": "Total des revenus",
+      "savings": "Épargne",
+      "uncategorized": "Sans catégorie"
+    },
+    "diagram": {
+      "showTransactions": "Afficher les transactions : {{name}}",
+      "negativeFlows": "Certains flux sont exclus — les diagrammes de Sankey ne peuvent pas afficher de valeurs négatives (p. ex. des remboursements). Les totaux peuvent donc légèrement différer."
+    },
+    "tooltip": {
+      "ofIncome": "{{percent}} % du total des revenus",
+      "savingsRate": "{{percent}} % de taux d’épargne",
+      "ofSpending": "{{percent}} % du total des dépenses",
+      "ofGroup": "{{percent}} % de {{group}}"
+    },
+    "list": {
+      "moneyIn": "Entrées",
+      "whereItWent": "Où est parti l’argent",
+      "saved": "Épargné",
+      "shareOfIncome": "{{share}}<srOnly> des revenus</srOnly>",
+      "hideTransactions": "Masquer les transactions",
+      "allTransactions": "Toutes les transactions de {{group}}"
+    },
+    "view": {
+      "label": "Afficher sous forme de",
+      "list": "Liste",
+      "diagram": "Diagramme",
+      "swipe": "Balayez pour tout voir"
+    },
+    "transactions": {
+      "title": "Transactions : {{name}}",
+      "clear": "Effacer"
+    }
+  },
+  "common": {
+    "actions": {
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "confirm": "Confirmer",
+      "done": "Terminé",
+      "learnMore": "En savoir plus",
+      "delete": "Supprimer",
+      "save": "Enregistrer"
+    },
+    "actionsMenu": "Actions",
+    "badge": {
+      "credit": "Carte de crédit",
+      "positive": "Positif",
+      "negative": "Négatif"
+    },
+    "emojiSearch": "Rechercher un emoji...",
+    "monthRange": {
+      "choose": "Choisir les mois",
+      "from": "De",
+      "to": "À",
+      "previousYear": "Année précédente",
+      "nextYear": "Année suivante"
+    },
+    "opensInNewTab": "(s’ouvre dans un nouvel onglet)",
+    "dragToReorder": "Faites glisser pour réordonner",
+    "loading": "Chargement...",
+    "errors": {
+      "generic": "Une erreur s’est produite.",
+      "tryAgain": "Une erreur s’est produite. Réessayez.",
+      "invalidValues": "Certaines valeurs saisies ne sont pas valides"
+    }
+  },
+  "connection": {
+    "savingPaused": "L’enregistrement est en pause jusqu’à ce que FlyBudget soit de nouveau connecté.",
+    "savedOnDevice": "FlyBudget est injoignable. Ceci est enregistré sur cet appareil et sera envoyé dès que la connexion sera rétablie.",
+    "banner": {
+      "label": "Connexion",
+      "cantReach": "FlyBudget est injoignable.",
+      "dataAsOf": "Vous voyez vos données d’il y a {{ago}}.",
+      "lookAround": "Vous pouvez toujours consulter l’application.",
+      "savedOnDevice": "Les nouvelles transactions sont enregistrées sur cet appareil ; les autres modifications attendent le retour de la connexion.",
+      "savingPaused": "L’enregistrement est en pause.",
+      "waiting_one": "{{count, number}} transaction attend d’être envoyée",
+      "waiting_other": "{{count, number}} transactions attendent d’être envoyées",
+      "waiting_many": "{{count, number}} de transactions attendent d’être envoyées",
+      "retryNow": "Réessayer maintenant",
+      "reconnected": "Connexion rétablie. Tout est à jour."
+    },
+    "retry": {
+      "checking": "Vérification…",
+      "paused": "En pause tant que cet onglet est en arrière-plan",
+      "tryingAgain": "Nouvelle tentative…",
+      "tryingAgainIn": "Nouvelle tentative dans {{seconds}} s",
+      "retrying": "Nouvelle tentative…",
+      "retryingIn": "Nouvelle tentative dans {{seconds}} s",
+      "progress": "Temps avant la prochaine tentative"
+    },
+    "reconnect": {
+      "title": {
+        "desktop": "FlyBudget redémarre",
+        "server": "Reconnexion à votre serveur",
+        "dev": "Reconnexion à FlyBudget"
+      },
+      "desktopHint": "Cela prend généralement quelques secondes.",
+      "serverError": "Le serveur de FlyBudget a répondu par une erreur.",
+      "cantReach": "Injoignable pour le moment. {{retry}}",
+      "tryNow": "Essayer maintenant",
+      "desktopHelp": "Si cela ne se règle pas, quittez FlyBudget et rouvrez-le. Vos données sont en sécurité sur cet ordinateur.",
+      "devHelp": "Le serveur de développement est peut-être en train de redémarrer. S’il s’est arrêté, relancez <code>npm run dev</code>.",
+      "troubleshooting": "Dépannage",
+      "serverSafe": "Votre budget est en sécurité sur le serveur ; cette page ne peut simplement pas y accéder.",
+      "checkRunning": "Vérifiez que le conteneur fonctionne :",
+      "checkLog": "Consultez ce qui a été journalisé :",
+      "checkProxy": "Si vous y accédez via un reverse proxy ou un VPN, vérifiez qu’il fonctionne aussi et que cet appareil est connecté au bon réseau."
+    },
+    "device": {
+      "browserOn": "{{browser}} sur {{os}}",
+      "unknown": "Navigateur inconnu"
+    },
+    "networkError": "FlyBudget est injoignable pour le moment. Rien n’a été enregistré ; réessayez dès que la connexion sera rétablie.",
+    "notSaved": "Impossible d’enregistrer"
+  },
+  "currency": {
+    "addRate": "Ajouter un taux",
+    "missingRates_one": "{{count, number}} transaction en {{currencies}} n’a pas encore de valeur en {{budget}} : il n’y a pas de taux de change pour ce jour.",
+    "missingRates_other": "{{count, number}} transactions en {{currencies}} n’ont pas encore de valeur en {{budget}} : il n’y a pas de taux de change pour ces jours.",
+    "missingRates_many": "{{count, number}} de transactions en {{currencies}} n’ont pas encore de valeur en {{budget}} : il n’y a pas de taux de change pour ces jours.",
+    "unconverted": "Hors {{currencies}} : pas encore de taux de change.",
+    "select": {
+      "label": "Devise",
+      "common": "Courantes",
+      "all": "Toutes les devises"
+    },
+    "foreign": {
+      "noRate": "Pas de taux",
+      "noRateHint": "Pas encore de taux de change pour ce jour : le budget ne le comptera que lorsqu’il y en aura un"
+    },
+    "mainAmount": {
+      "label": "Valeur en {{currency}}",
+      "noRate": "Pas encore de taux",
+      "useRate": "Utiliser le taux de ce jour",
+      "source": {
+        "rate": "Au taux de change de ce jour.",
+        "manual": "Tel que vous l’avez saisi.",
+        "transfer": "Ce que vaut l’autre côté du virement.",
+        "missing": "Pas encore de taux de change pour ce jour, donc le budget ne le compte pas encore. Saisissez ce que cela a coûté, ou ajoutez un taux via Paramètres → Devises."
+      }
+    },
+    "difference": {
+      "why": "L’effet de la variation du taux de change sur la valeur de ce compte",
+      "fromRate": "{{amount}} dû au taux",
+      "title": "Écart de change",
+      "gain": "Au taux d’aujourd’hui, {{name}} vaut <strong>{{amount}} de plus</strong> que ce que votre budget a compté à l’arrivée de l’argent. Enregistrez-le pour rééquilibrer votre budget : une correction de ce montant sera ajoutée en revenus.",
+      "loss": "Au taux d’aujourd’hui, {{name}} vaut <strong>{{amount}} de moins</strong> que ce que votre budget a compté à l’arrivée de l’argent. Enregistrez-le pour rééquilibrer votre budget : une correction de ce montant sera ajoutée en dépenses.",
+      "category": "Catégorie",
+      "noCategory": "Aucune catégorie (patrimoine net uniquement)",
+      "noCategoryHint": "Sans catégorie, cela n’est pas compté dans les revenus et dépenses, comme les autres corrections de solde.",
+      "record": "Enregistrer l’écart"
+    }
+  },
+  "dashboard": {
+    "viewAll": "Tout voir",
+    "gettingStarted": {
+      "title": "Premiers pas avec FlyBudget",
+      "progress": "{{done}} sur {{total}} terminés. Chaque étape rend votre tableau de bord plus complet.",
+      "hide": "Masquer les premiers pas",
+      "progressLabel": "Progression des premiers pas",
+      "done": "Terminé",
+      "help": "Vous ne savez pas par où commencer ?",
+      "guide": "Lire le guide de démarrage",
+      "steps": {
+        "account": {
+          "title": "Ajoutez votre premier compte",
+          "description": "Un compte courant, une carte de crédit ou des espèces : tout ce qui contient de l’argent."
+        },
+        "transactions": {
+          "title": "Importez vos transactions",
+          "description": "Importez un fichier CSV de votre banque, connectez une banque, ou ajoutez-les à la main."
+        },
+        "recurring": {
+          "title": "Ajoutez vos charges fixes et votre salaire",
+          "description": "Voyez ce que vous devrez bientôt payer et ne manquez plus jamais un paiement."
+        },
+        "budget": {
+          "title": "Planifiez le budget de ce mois",
+          "description": "Maintenant que votre salaire et vos charges fixes y figurent, donnez une destination au reste de votre argent."
+        },
+        "rules": {
+          "title": "Catégorisez automatiquement",
+          "description": "Les règles trient les nouvelles transactions pour vous, selon le bénéficiaire, le montant et plus encore."
+        }
+      },
+      "actions": {
+        "account": "Ajouter un compte",
+        "import": "Importer ou ajouter",
+        "connect": "Connecter une banque",
+        "recurring": "Ajouter des charges fixes",
+        "budget": "Ouvrir le budget",
+        "rules": "Créer une règle"
+      }
+    },
+    "cashFlow": {
+      "title": "Flux de trésorerie",
+      "netThisMonth": "Résultat ce mois-ci : <net>{{amount}}</net>",
+      "income": "Revenus",
+      "expenses": "Dépenses",
+      "emptyTitle": "Pas encore d’entrées ni de sorties d’argent",
+      "emptyDescription": "Ajoutez des transactions pour comparer ce qui entre à ce qui sort, mois par mois.",
+      "add": "Ajouter une transaction"
+    },
+    "netWorth": {
+      "title": "Patrimoine net",
+      "description": "Ce que vous possédez moins ce que vous devez, tous comptes confondus.",
+      "add": "Ajouter un compte",
+      "presets": {
+        "1m": "1 mois",
+        "3m": "3 mois",
+        "6m": "6 mois",
+        "ytd": "Depuis janvier",
+        "1y": "1 an",
+        "all": "Tout"
+      }
+    },
+    "recent": {
+      "title": "Transactions récentes",
+      "emptyTitle": "Pas encore de transactions",
+      "emptyDescription": "Importez un fichier CSV de votre banque, connectez une banque, ou ajoutez des transactions à la main.",
+      "import": "Importer un CSV",
+      "add": "Ajouter une transaction"
+    },
+    "spending": {
+      "title": "Dépenses par catégorie",
+      "emptyTitle": "Aucune dépense ce mois-ci",
+      "emptyDescription": "À mesure que vous dépensez, vos plus grandes catégories apparaîtront ici.",
+      "uncategorized": "Sans catégorie"
+    },
+    "summary": {
+      "leftToSpend": "Reste à dépenser",
+      "noBudget": "Aucun budget défini pour ce mois",
+      "avgIncome": "Revenus moyens par mois",
+      "avgExpenses": "Dépenses moyennes par mois",
+      "savingsRate": "Taux d’épargne",
+      "goal": "Objectif : {{percent}} %",
+      "incomeHint": "Visible dès que vous avez des revenus"
+    },
+    "upcoming": {
+      "title": "Prochaines charges fixes",
+      "emptyTitle": "Suivez vos charges fixes et votre salaire",
+      "emptyDescription": "Ajoutez le loyer, les abonnements et les revenus récurrents, ou laissez FlyBudget les repérer dans vos transactions.",
+      "add": "Ajouter",
+      "none": "Rien à payer dans les 30 prochains jours.",
+      "when": {
+        "overdue": "{{date}} · {{days}} j de retard",
+        "today": "{{date}} · Aujourd’hui",
+        "tomorrow": "{{date}} · Demain",
+        "inDays": "{{date}} · dans {{days}} j"
+      }
+    },
+    "budget": {
+      "title": "Budget",
+      "emptyTitle": "Pas encore de budget pour {{month}}",
+      "emptyDescription": "Définissez combien vous comptez dépenser dans chaque catégorie et suivez ici votre progression.",
+      "plan": "Planifier votre budget",
+      "planned": "{{amount}} prévus",
+      "spent": "{{amount}} dépensés",
+      "remaining": "{{amount}} restants"
+    },
+    "comparison": {
+      "spendingWeek": "Dépenses <amount>{{amount}} cette semaine</amount>",
+      "spendingMonth": "Dépenses <amount>{{amount}} ce mois-ci</amount>",
+      "spendingYear": "Dépenses <amount>{{amount}} cette année</amount>",
+      "modes": {
+        "week_vs_last_week": "Cette semaine vs semaine dernière",
+        "month_vs_last_month": "Ce mois-ci vs mois dernier",
+        "month_vs_last_year": "Ce mois-ci vs l’année dernière",
+        "month_vs_average": "Ce mois-ci vs mois moyen",
+        "year_vs_last_year": "Cette année vs année dernière"
+      },
+      "thisWeek": "Cette semaine",
+      "thisMonth": "Ce mois-ci",
+      "thisYear": "Cette année",
+      "lastWeek": "Semaine dernière",
+      "lastMonth": "Mois dernier",
+      "lastYear": "Année dernière",
+      "averageMonth": "Mois moyen (12 derniers mois)",
+      "day": "Jour {{day}}",
+      "emptyTitle": "Rien à comparer pour l’instant",
+      "emptyDescription": "Dès que vous aurez des dépenses, vous verrez ici comment cette période se compare à la précédente."
+    }
+  },
+  "dateRange": {
+    "presets": {
+      "thisMonth": {
+        "label": "1M",
+        "long": "Ce mois-ci"
+      },
+      "last3Months": {
+        "label": "3M",
+        "long": "3 derniers mois"
+      },
+      "last6Months": {
+        "label": "6M",
+        "long": "6 derniers mois"
+      },
+      "last12Months": {
+        "label": "12M",
+        "long": "12 derniers mois"
+      },
+      "yearToDate": {
+        "label": "Année",
+        "long": "Depuis le début de l’année"
+      },
+      "lastYear": {
+        "label": "Année dernière",
+        "long": "Année dernière"
+      },
+      "allTime": {
+        "label": "Tout",
+        "long": "Tout"
+      },
+      "custom": {
+        "label": "Personnalisé",
+        "long": "Période personnalisée"
+      }
+    },
+    "fromTo": "{{from}} – {{to}}",
+    "frozen": "Figé",
+    "frozenHint": "Conserver ces dates au lieu de suivre le mois en cours"
+  },
+  "demo": {
+    "download": "Télécharger FlyBudget",
+    "banner": {
+      "label": "Démo",
+      "short": "<strong>Ceci est un budget de démonstration.</strong><muted> Rien n’est enregistré.</muted>",
+      "long": "<strong>Ceci est un budget de démonstration</strong><muted>. Modifiez ce que vous voulez. Rien n’est enregistré et si vous fermez l’onglet, tout repart de zéro.</muted>",
+      "home": "Retour à l’accueil",
+      "homeHint": "Retour à la page d’accueil de FlyBudget",
+      "startOver": "Recommencer",
+      "startOverHint": "Recommencer avec le budget de démonstration d’origine",
+      "download": "Télécharger<wide> FlyBudget</wide>"
+    },
+    "notAvailable": {
+      "title": "Non disponible dans la démo",
+      "connectBank": "Connecter une banque",
+      "banks": "Les connexions bancaires ne fonctionnent que dans l’application FlyBudget : dans la démo, vous ne pouvez ni connecter de banque ni saisir d’identifiants. Dans l’application, Plaid, SimpleFIN ou Enable Banking (banques européennes) récupère automatiquement vos transactions, et vous pouvez aussi importer des fichiers CSV de votre banque."
+    },
+    "error": "Une erreur s’est produite"
+  },
+  "goals": {
+    "title": "Objectifs",
+    "add": "Ajouter un objectif",
+    "empty": {
+      "title": "Épargnez pour ce qui compte",
+      "description": "Définissez un montant cible, comme un fonds d’urgence, un voyage ou une nouvelle voiture. Vous verrez alors où vous en êtes et combien mettre de côté chaque mois."
+    },
+    "stats": {
+      "saved": "Épargné",
+      "ofTarget": "{{pct}} % de l’objectif",
+      "target": "Montant cible",
+      "left": "Reste à épargner",
+      "reached": "Objectifs atteints",
+      "reachedValue": "{{reached}} sur {{total}}"
+    },
+    "group": {
+      "inProgress": "En cours",
+      "completed": "Terminés",
+      "count_one": "{{count, number}} objectif",
+      "count_other": "{{count, number}} objectifs"
+    },
+    "row": {
+      "target": "Date cible {{date}}",
+      "of": "sur {{amount}}",
+      "edit": "Modifier l’objectif",
+      "delete": "Supprimer l’objectif",
+      "reached": "Objectif atteint",
+      "overdue": "Date cible dépassée · reste {{amount}}",
+      "toGo": "reste {{amount}}",
+      "perMonth": "· {{amount}}/mois pour y arriver à temps"
+    },
+    "delete": {
+      "title": "Supprimer l’objectif",
+      "message": "Supprimer \"{{name}}\" ? Cette action est irréversible."
+    },
+    "form": {
+      "editTitle": "Modifier l’objectif",
+      "name": "Nom",
+      "namePlaceholder": "p. ex. Fonds d’urgence",
+      "target": "Montant cible",
+      "saved": "Épargné jusqu’à présent",
+      "targetDate": "Date cible",
+      "targetDateOptional": "Date cible (facultatif)",
+      "account": "Compte lié",
+      "accountOptional": "Compte lié (facultatif)",
+      "noAccount": "Aucun",
+      "icon": "Icône",
+      "color": "Couleur",
+      "colorOption": "Couleur {{color}}",
+      "addTitle": "Ajouter un objectif",
+      "add": "Ajouter l’objectif"
+    },
+    "undo": {
+      "create": "Créer l’objectif \"{{name}}\"",
+      "edit": "Modifier l’objectif",
+      "delete": "Supprimer l’objectif \"{{name}}\""
+    }
+  },
+  "images": {
+    "notAnImage": "Choisissez un fichier image.",
+    "processFailed": "L’image n’a pas pu être traitée.",
+    "readFailed": "Cette image n’a pas pu être lue."
+  },
+  "import": {
+    "skipped": {
+      "count_one": "{{count, number}} ligne ignorée",
+      "count_other": "{{count, number}} lignes ignorées",
+      "count_many": "{{count, number}} de lignes ignorées",
+      "fields": {
+        "date": "date",
+        "amount": "montant",
+        "direction": "sens"
+      },
+      "row": "ligne {{row}}, {{field}} {{value}}",
+      "quoted": "« {{value}} »",
+      "empty": "(vide)",
+      "more": "et {{count, number}} de plus",
+      "summary": "{{total}} : {{rows}}."
+    },
+    "title": "Importer des transactions",
+    "dismiss": "Fermer",
+    "back": "Retour",
+    "checking": "Vérification...",
+    "upload": {
+      "drop": "Glissez ici un fichier de votre banque, ou cliquez pour parcourir",
+      "formats": "CSV, ou relevé bancaire CAMT.053 (XML)",
+      "checking": "Vérification…",
+      "demo": "Démo : votre fichier reste dans cet onglet du navigateur et n’est pas enregistré.",
+      "bankFile": "Fichier bancaire"
+    },
+    "statement": {
+      "intro_one": "Ce fichier contient des relevés pour {{count, number}} compte. Lequel correspond à ce compte ?",
+      "intro_other": "Ce fichier contient des relevés pour {{count, number}} comptes. Lequel correspond à ce compte ?",
+      "label": "Relevé",
+      "noNumber": "Compte sans numéro",
+      "option_one": "{{account}} ({{count, number}} transaction)",
+      "option_other": "{{account}} ({{count, number}} transactions)",
+      "option_many": "{{account}} ({{count, number}} de transactions)",
+      "optionKnown_one": "{{account}} ({{count, number}} transaction), déjà importé ici",
+      "optionKnown_other": "{{account}} ({{count, number}} transactions), déjà importé ici",
+      "optionKnown_many": "{{account}} ({{count, number}} de transactions), déjà importé ici"
+    },
+    "map": {
+      "intro_one": "Associez chaque colonne à un champ. {{count, number}} ligne trouvée.",
+      "intro_other": "Associez chaque colonne à un champ. {{count, number}} lignes trouvées.",
+      "intro_many": "Associez chaque colonne à un champ. {{count, number}} de lignes trouvées.",
+      "usingSaved": "Nous utilisons les réglages de votre précédent import dans ce compte.",
+      "separator": "Séparateur",
+      "encoding": "Jeu de caractères",
+      "skipRows": "Lignes avant l’en-tête",
+      "dates": "Dates",
+      "amounts": "Montants",
+      "choose": "Choisir…",
+      "outWord": "Mot pour une sortie d’argent",
+      "outWordPlaceholder": "Facultatif, p. ex. Débit",
+      "column": "Colonne {{name}}",
+      "warn": {
+        "dateSample": "Ce fichier n’indique pas dans quel ordre {{sample}} est écrit.",
+        "dateMixed": "Ce fichier contient des dates dans des ordres différents.",
+        "amountSample": "Ce fichier n’indique pas si {{sample}} utilise un point décimal ou une virgule décimale.",
+        "amountMixed": "Ce fichier contient des montants dans des notations différentes.",
+        "chooseFormat": "Choisissez la notation utilisée par votre banque.",
+        "outWord": "FlyBudget ne sait pas ce que signifie {{words}} dans la colonne du sens. Saisissez le mot que votre banque utilise pour l’argent qui sort ; les autres mots inconnus sont comptés comme de l’argent qui entre."
+      },
+      "fromLastTime": {
+        "dates": "Ce fichier n’indique pas comment les dates sont écrites : nous utilisons {{format}}, comme pour votre précédent import dans ce compte.",
+        "amounts": "Ce fichier n’indique pas comment les montants sont écrits : nous utilisons {{format}}, comme pour votre précédent import dans ce compte.",
+        "both": "Ce fichier n’indique pas comment les dates et les montants sont écrits : nous utilisons {{dateFormat}} et {{numberFormat}}, comme pour votre précédent import dans ce compte."
+      }
+    },
+    "delimiters": {
+      "comma": "Virgule",
+      "semicolon": "Point-virgule",
+      "tab": "Tabulation"
+    },
+    "encodings": {
+      "auto": "Automatique",
+      "windows1252": "Europe occidentale (Windows-1252)",
+      "windows1250": "Europe centrale (Windows-1250)",
+      "iso88592": "Europe centrale (ISO-8859-2)"
+    },
+    "roles": {
+      "date": "Date",
+      "payee": "Bénéficiaire",
+      "amount": "Montant",
+      "inflow": "Crédit",
+      "outflow": "Débit",
+      "direction": "Sens (débit/crédit)",
+      "notes": "Notes",
+      "skip": "Ignorer"
+    },
+    "preview": {
+      "button": "Aperçu",
+      "found_one": "{{count, number}} transaction trouvée.",
+      "found_other": "{{count, number}} transactions trouvées.",
+      "found_many": "{{count, number}} de transactions trouvées.",
+      "duplicates_one": "{{count, number}} doublon trouvé.",
+      "duplicates_other": "{{count, number}} doublons trouvés.",
+      "duplicates_many": "{{count, number}} de doublons trouvés.",
+      "willImport_one": "{{count, number}} sera importée.",
+      "willImport_other": "{{count, number}} seront importées.",
+      "willImport_many": "{{count, number}} de transactions seront importées.",
+      "entriesLeftOut_one": "{{count, number}} écriture n’est pas encore traitée ou n’a pas pu être lue, et a été écartée.",
+      "entriesLeftOut_other": "{{count, number}} écritures ne sont pas encore traitées ou n’ont pas pu être lues, et ont été écartées.",
+      "entriesLeftOut_many": "{{count, number}} d'écritures ne sont pas encore traitées ou n’ont pas pu être lues, et ont été écartées.",
+      "otherCurrency": "Ce relevé est en {{statementCurrency}}, mais ce compte est en {{currency}}. Importez-le plutôt dans un compte en {{statementCurrency}} (vous pouvez en ajouter un avec cette devise).",
+      "otherAccount": "Ce relevé concerne le compte {{statementAccount}}, mais le dernier relevé importé dans ce compte concernait {{knownAccount}}. Vérifiez que vous l’importez dans le bon compte.",
+      "fixFile": "Corrigez le fichier et importez-le à nouveau pour les inclure.",
+      "columns": {
+        "date": "Date",
+        "payee": "Bénéficiaire",
+        "amount": "Montant"
+      },
+      "rowLabel": "Importer {{payee}} du {{date}}",
+      "rowLabelNoPayee": "Importer la ligne du {{date}}",
+      "duplicate": "doublon",
+      "importing": "Importation...",
+      "import_one": "Importer {{count, number}} transaction",
+      "import_other": "Importer {{count, number}} transactions",
+      "import_many": "Importer {{count, number}} de transactions"
+    },
+    "done": {
+      "title": "Importation terminée",
+      "summary": "{{imported}}, {{skipped}}",
+      "imported_one": "{{count, number}} importée",
+      "imported_other": "{{count, number}} importées",
+      "imported_many": "{{count, number}} de transactions importées",
+      "skipped_one": "{{count, number}} ignorée",
+      "skipped_other": "{{count, number}} ignorées",
+      "skipped_many": "{{count, number}} de transactions ignorées"
+    },
+    "errors": {
+      "parse": "Impossible de traiter le fichier CSV",
+      "tooManyRows_one": "Ce fichier contient {{count, number}} transaction. FlyBudget en importe au maximum {{max}} à la fois : divisez-le en fichiers plus petits.",
+      "tooManyRows_other": "Ce fichier contient {{count, number}} transactions. FlyBudget en importe au maximum {{max}} à la fois : divisez-le en fichiers plus petits.",
+      "tooManyRows_many": "Ce fichier contient {{count, number}} de transactions. FlyBudget en importe au maximum {{max}} à la fois : divisez-le en fichiers plus petits.",
+      "previewFailed": "Échec de l’aperçu",
+      "noBooked": "Ce relevé ne contient aucune transaction comptabilisée",
+      "unreadable": "Impossible de lire ce fichier",
+      "notStatement": "Ce fichier n’est pas un relevé bancaire que FlyBudget peut lire (CAMT.053)",
+      "chooseDates": "Choisissez comment ce fichier écrit les dates",
+      "chooseAmounts": "Choisissez comment ce fichier écrit les montants",
+      "needOutWord": "Saisissez le mot que votre banque utilise pour l’argent qui sort",
+      "noneImported": "Aucune ligne n’a pu être importée. {{skipped}}",
+      "noValidRows": "Aucune ligne valide trouvée",
+      "noneSelected": "Aucune ligne sélectionnée",
+      "importFailed": "Échec de l’importation"
+    }
+  },
+  "layout": {
+    "accounts": {
+      "all": "Tous les comptes",
+      "forBudget": "Dans le budget",
+      "offBudget": "Hors budget",
+      "none": "Pas encore de comptes",
+      "withoutRate": "Hors {{currencies}} : pas encore de taux de change",
+      "add": "Ajouter un compte",
+      "addManual": "Ajouter un compte manuellement",
+      "connectPlaid": "Connecter via Plaid",
+      "connectSimplefin": "Connecter via SimpleFIN",
+      "connectEnableBanking": "Connecter via Enable Banking"
+    },
+    "helpFooter": {
+      "newHere": "Nouveau sur FlyBudget ?",
+      "guide": "Lire le guide",
+      "source": "Code source sur GitHub",
+      "report": "Signaler un problème ou faire une suggestion"
+    },
+    "nav": {
+      "main": "Menu principal",
+      "manage": "Gérer",
+      "dashboard": "Tableau de bord",
+      "accounts": "Comptes",
+      "transactions": "Transactions",
+      "budget": "Budget",
+      "recurring": "Récurrent",
+      "reports": "Rapports",
+      "cashFlow": "Flux de trésorerie",
+      "goals": "Objectifs",
+      "payees": "Bénéficiaires",
+      "rules": "Règles",
+      "settings": "Paramètres"
+    },
+    "openMenu": "Ouvrir le menu",
+    "server": {
+      "statusOnline": "État du serveur : en ligne, {{place}}",
+      "statusReconnecting": "État du serveur : reconnexion, {{place}}",
+      "reconnecting": "Reconnexion…",
+      "placeDemo": "Démo dans ce navigateur",
+      "placeComputer": "Sur cet ordinateur",
+      "addressDemo": "Ce navigateur",
+      "addressComputer": "Cet ordinateur",
+      "menu": "Serveur",
+      "online": "Serveur en ligne",
+      "reconnectingToServer": "Reconnexion au serveur",
+      "address": "Adresse",
+      "connection": "Connexion",
+      "version": "Version",
+      "retryNow": "Réessayer maintenant",
+      "settings": "Paramètres du serveur",
+      "signOut": "Se déconnecter",
+      "security": {
+        "encrypted": "Chiffrée (HTTPS)",
+        "local": "Reste sur cet ordinateur",
+        "unencrypted": "Non chiffrée (HTTP)"
+      }
+    },
+    "sidebar": {
+      "resize": "Redimensionner la barre latérale",
+      "help": "Aide et documentation",
+      "helpLink": "Aide et documentation (s’ouvre dans un nouvel onglet)",
+      "closeMenu": "Fermer le menu",
+      "pin": "Épingler la barre latérale",
+      "unpin": "Détacher la barre latérale"
+    },
+    "skipToContent": "Aller au contenu principal"
+  },
+  "payees": {
+    "icon": {
+      "change": "Changer l’image de {{name}}",
+      "upload": "Téléverser une image pour {{name}}",
+      "useInitial": "Utiliser les initiales",
+      "remove": "Supprimer l’image de {{name}}",
+      "failed": "Cette image ne peut pas être utilisée."
+    },
+    "undo": {
+      "create": "Créer le bénéficiaire \"{{name}}\"",
+      "edit": "Modifier le bénéficiaire",
+      "delete": "Supprimer le bénéficiaire \"{{name}}\""
+    },
+    "title": "Bénéficiaires",
+    "search": "Rechercher des bénéficiaires…",
+    "mergeSelected_one": "Fusionner {{count, number}} bénéficiaire",
+    "mergeSelected_other": "Fusionner {{count, number}} bénéficiaires",
+    "mergeSelected_many": "Fusionner {{count, number}} de bénéficiaires",
+    "noMatch": "Aucun bénéficiaire trouvé pour votre recherche.",
+    "empty": {
+      "title": "Pas encore de bénéficiaires",
+      "description": "Les bénéficiaires sont les personnes et les entreprises à qui vous payez de l’argent ou de qui vous en recevez. Ils sont ajoutés automatiquement quand vous saisissez ou importez des transactions, et vous pouvez donner une catégorie par défaut à chacun.",
+      "add": "Ajouter une transaction"
+    },
+    "listLabel": "Bénéficiaires",
+    "selectAllLabel": "Sélectionner tous les bénéficiaires",
+    "selectAll": "Tout sélectionner",
+    "sortLabel": "Trier les bénéficiaires",
+    "sort": {
+      "nameAsc": "Nom (A–Z)",
+      "nameDesc": "Nom (Z–A)",
+      "mostTransactions": "Plus de transactions",
+      "fewestTransactions": "Moins de transactions",
+      "categoryAsc": "Catégorie (A–Z)",
+      "categoryDesc": "Catégorie (Z–A)"
+    },
+    "select": "Sélectionner {{name}}",
+    "rename": "Renommer {{name}}",
+    "transactionCount_one": "{{count, number}} transaction",
+    "transactionCount_other": "{{count, number}} transactions",
+    "transactionCount_many": "{{count, number}} de transactions",
+    "actionsFor": "Actions pour {{name}}",
+    "menu": {
+      "rename": "Renommer",
+      "delete": "Supprimer"
+    },
+    "defaultCategoryFor": "Catégorie par défaut pour {{name}}",
+    "noDefaultCategory": "Aucune catégorie par défaut",
+    "noDefault": "Aucune par défaut",
+    "columns": {
+      "name": "Nom",
+      "category": "Catégorie par défaut",
+      "transactions": "Transactions"
+    },
+    "doubleClickRename": "Double-cliquez pour renommer",
+    "deleteLabel": "Supprimer {{name}}",
+    "merge": {
+      "title": "Fusionner les bénéficiaires",
+      "intro": "Choisissez le nom à conserver. Toutes les transactions seront déplacées vers le bénéficiaire choisi.",
+      "confirm": "Fusionner"
+    },
+    "delete": {
+      "title": "Supprimer le bénéficiaire",
+      "message": "Supprimer \"{{name}}\" ? Toutes les transactions de ce bénéficiaire n’auront ensuite plus de bénéficiaire.",
+      "confirm": "Supprimer"
+    }
+  },
+  "recurring": {
+    "freq": {
+      "once": "Unique",
+      "weekly": "Hebdomadaire",
+      "biweekly": "Toutes les 2 semaines",
+      "semimonthly": "Deux fois par mois",
+      "monthly": "Mensuel",
+      "quarterly": "Trimestriel",
+      "semiannually": "Tous les 6 mois",
+      "yearly": "Annuel"
+    },
+    "status": {
+      "waiting": "Manqué",
+      "due": "Aujourd’hui",
+      "upcoming": "Bientôt",
+      "paid": "Payé",
+      "skipped": "Ignoré",
+      "cancelled": "Arrêté",
+      "paused": "En pause",
+      "scheduled": "Prévu"
+    },
+    "upcoming": {
+      "presets": {
+        "1": "1 jour",
+        "7": "1 semaine",
+        "14": "2 semaines",
+        "oneMonth": "1 mois",
+        "currentMonth": "Fin du mois en cours"
+      },
+      "length": {
+        "day_one": "{{count, number}} jour",
+        "day_other": "{{count, number}} jours",
+        "week_one": "{{count, number}} semaine",
+        "week_other": "{{count, number}} semaines",
+        "month_one": "{{count, number}} mois",
+        "month_other": "{{count, number}} mois",
+        "year_one": "{{count, number}} an",
+        "year_other": "{{count, number}} ans"
+      },
+      "button": "Bientôt : {{length}}",
+      "buttonTitle": "Modifier la période « Bientôt »"
+    },
+    "lengthModal": {
+      "title": "Modifier la période « Bientôt »",
+      "intro": "Modifiez combien de jours avant la date une transaction récurrente est affichée comme <strong>Bientôt</strong>. Les transactions plus tardives sont affichées comme <strong>Prévu</strong>.",
+      "note": "Cela ne change que l’affichage des transactions récurrentes. Vous pouvez l’ajuster à tout moment.",
+      "custom": "Période personnalisée",
+      "units": {
+        "day": "Jours",
+        "week": "Semaines",
+        "month": "Mois",
+        "year": "Années"
+      },
+      "window_one": "Les transactions dont l’échéance tombe dans <days>{{count, number}} jour</days> sont affichées comme Bientôt.",
+      "window_other": "Les transactions dont l’échéance tombe dans <days>{{count, number}} jours</days> sont affichées comme Bientôt."
+    },
+    "all": {
+      "menu": {
+        "markNextPaid": "Marquer la prochaine comme payée",
+        "skipNext": "Ignorer la prochaine date",
+        "resume": "Reprendre",
+        "pause": "Mettre en pause",
+        "restart": "Redémarrer",
+        "edit": "Modifier",
+        "cancel": "Arrêter",
+        "deletePermanently": "Supprimer définitivement"
+      },
+      "actionsFor": "Actions pour {{name}}",
+      "next": "Prochaine : {{date}}",
+      "find": "Rechercher automatiquement",
+      "add": "Ajouter",
+      "filterPlaceholder": "Filtrer les transactions récurrentes…",
+      "columns": {
+        "name": "Nom",
+        "payee": "Bénéficiaire",
+        "account": "Compte",
+        "nextDate": "Prochaine date",
+        "status": "Statut",
+        "amount": "Montant",
+        "frequency": "Fréquence"
+      },
+      "noMatch": "Aucune transaction récurrente correspondante",
+      "noActive": "Aucune transaction récurrente active",
+      "empty": {
+        "title": "Pas encore de transactions récurrentes",
+        "description": "Ajoutez des charges fixes, des abonnements et un salaire pour voir ce qu’il faut payer et quand, ou laissez FlyBudget les rechercher dans les transactions que vous avez déjà."
+      },
+      "showCanceled": "Afficher les transactions récurrentes arrêtées ({{count, number}})",
+      "confirm": {
+        "deleteTitle": "Supprimer la transaction récurrente ?",
+        "cancelTitle": "Arrêter la transaction récurrente ?",
+        "deleteMessage": "\"{{name}}\" sera supprimée définitivement. Cette action est irréversible.",
+        "cancelMessage": "Plus aucune nouvelle transaction ne sera créée pour \"{{name}}\". Vous pourrez la redémarrer depuis la liste des transactions arrêtées.",
+        "deleteConfirm": "Supprimer",
+        "cancelConfirm": "Arrêter"
+      }
+    },
+    "row": {
+      "overdue_one": "{{count, number}} jour de retard",
+      "overdue_other": "{{count, number}} jours de retard",
+      "today": "Aujourd’hui",
+      "tomorrow": "Demain",
+      "inDays_one": "dans {{count, number}} jour",
+      "inDays_other": "dans {{count, number}} jours",
+      "menu": {
+        "markPaid": "Marquer comme payée",
+        "match": "Associer à une transaction",
+        "skip": "Ignorer",
+        "unlink": "Dissocier la transaction",
+        "edit": "Modifier la transaction récurrente"
+      },
+      "actualPaid": "Montant réellement payé",
+      "paidAmount": "Payé : {{amount}}"
+    },
+    "calendar": {
+      "more_one": "{{count, number}} de plus",
+      "more_other": "{{count, number}} de plus"
+    },
+    "suggestions": {
+      "banner_one": "{{count, number}} transaction correspond peut-être à vos transactions récurrentes",
+      "banner_other": "{{count, number}} transactions correspondent peut-être à vos transactions récurrentes",
+      "banner_many": "{{count, number}} de transactions correspondent peut-être à vos transactions récurrentes",
+      "hide": "Masquer",
+      "review": "Examiner maintenant",
+      "match": "({{score}} % de correspondance)",
+      "accept": "Accepter l’association",
+      "dismiss": "Ignorer"
+    },
+    "matchModal": {
+      "title": "Associer à une transaction",
+      "expected": "Attendu : {{date}} · {{amount}}",
+      "filterPlaceholder": "Filtrer par bénéficiaire ou notes…",
+      "none": "Aucune transaction correspondante trouvée.",
+      "match": "Associer"
+    },
+    "discover": {
+      "title": "Rechercher des transactions récurrentes",
+      "intro": "Votre historique de transactions a été analysé pour trouver des paiements au même bénéficiaire, pour un montant similaire, selon un rythme fixe hebdomadaire, toutes les deux semaines ou mensuel. Sélectionnez les transactions que vous souhaitez suivre. Les transactions passées correspondantes seront associées à chaque nouvelle transaction récurrente.",
+      "hint": "Il vous manque quelque chose ? Les transactions ne sont regroupées que si elles ont le même bénéficiaire ; il peut donc être utile de donner le même nom aux bénéficiaires. Les bénéficiaires que vous suivez déjà ne figurent pas dans la liste.",
+      "selectAll": "Tout sélectionner",
+      "columns": {
+        "payee": "Bénéficiaire",
+        "account": "Compte",
+        "when": "Quand",
+        "amount": "Montant"
+      },
+      "scanning": "Analyse de vos transactions…",
+      "none": "Aucune transaction récurrente trouvée",
+      "track": "Suivre {{name}}",
+      "history_one": "{{count, number}} fois · depuis le {{date}}",
+      "history_other": "{{count, number}} fois · depuis le {{date}}",
+      "history_many": "{{count, number}} de fois · depuis le {{date}}",
+      "selected_one": "{{count, number}} sélectionnée",
+      "selected_other": "{{count, number}} sélectionnées",
+      "selected_many": "{{count, number}} de sélectionnées",
+      "shiftHint": "Maj+clic pour sélectionner une plage",
+      "creating": "Création…",
+      "create_one": "Créer {{count, number}} transaction récurrente",
+      "create_other": "Créer {{count, number}} transactions récurrentes",
+      "create_many": "Créer {{count, number}} de transactions récurrentes",
+      "createEmpty": "Créer des transactions récurrentes",
+      "describe": {
+        "weekly": "Chaque semaine le {{day}}",
+        "weeklyApprox": "Chaque semaine le {{day}} (environ)",
+        "biweekly": "Toutes les 2 semaines le {{day}}",
+        "biweeklyApprox": "Toutes les 2 semaines le {{day}} (environ)",
+        "monthlyLast": "Chaque mois le dernier jour",
+        "monthlyLastApprox": "Chaque mois le dernier jour (environ)",
+        "monthlyDay_ordinal_one": "Chaque mois le {{count}}er",
+        "monthlyDay_ordinal_other": "Chaque mois le {{count}}",
+        "monthlyDayApprox_ordinal_one": "Chaque mois le {{count}}er (environ)",
+        "monthlyDayApprox_ordinal_other": "Chaque mois le {{count}} (environ)"
+      }
+    },
+    "form": {
+      "titleEdit": "Modifier la transaction récurrente",
+      "titleAdd": "Ajouter une transaction récurrente",
+      "name": "Nom",
+      "namePlaceholder": "p. ex. Netflix, Loyer, Salaire…",
+      "amount": "Montant",
+      "estimatedAmount": "Montant estimé",
+      "type": "Type",
+      "expense": "Dépense",
+      "income": "Revenu",
+      "precision": "Précision du montant",
+      "amountTypes": {
+        "exact": "Exact",
+        "approximate": "Approximatif",
+        "variable": "Variable"
+      },
+      "variableHint": "Le montant est une estimation : il sert aux prévisions et à l’association des transactions, pas d’attente exacte.",
+      "frequency": "Fréquence",
+      "account": "Compte",
+      "noAccount": "Aucun compte",
+      "startDate": "Date de début",
+      "startDateLabel": "Date de début",
+      "endDate": "Date de fin <optional>(facultatif)</optional>",
+      "endDateLabel": "Date de fin",
+      "payee": "Bénéficiaire <optional>(facultatif)</optional>",
+      "payeeLabel": "Bénéficiaire",
+      "category": "Catégorie",
+      "notes": "Notes <optional>(facultatif)</optional>",
+      "notesLabel": "Notes",
+      "notesPlaceholder": "Notes facultatives…",
+      "autoCreate": "Créer automatiquement les transactions",
+      "advancedOpen": "▾ Avancé",
+      "advancedClosed": "▸ Avancé",
+      "weekendAdjustment": "Ajustement week-end",
+      "weekendAdjustmentLabel": "Ajustement week-end",
+      "weekendOptions": {
+        "none": "Aucun",
+        "before": "Avant le week-end",
+        "after": "Après le week-end",
+        "closest": "Jour ouvré le plus proche"
+      },
+      "dateFlexibility": "Tolérance de date <hint>(± jours pour l’association)</hint>",
+      "dateFlexibilityLabel": "Tolérance de date",
+      "saveChanges": "Enregistrer les modifications",
+      "add": "Ajouter la transaction récurrente"
+    },
+    "undo": {
+      "create": "Créer la transaction récurrente \"{{name}}\"",
+      "edit": "Modifier la transaction récurrente",
+      "cancel": "Arrêter la transaction récurrente \"{{name}}\"",
+      "markPaid": "Marquer comme payée"
+    },
+    "page": {
+      "title": "Récurrent",
+      "tabs": {
+        "monthly": "Par mois",
+        "all": "Toutes"
+      }
+    },
+    "monthly": {
+      "income": "Revenus",
+      "expenses": "Dépenses",
+      "remaining": "restant",
+      "incomeSummary": "{{paid}} reçus sur {{total}}",
+      "expensesSummary": "{{paid}} payés sur {{total}}",
+      "none": "Aucune ce mois-ci",
+      "columns": {
+        "date": "Date",
+        "account": "Compte",
+        "status": "Statut",
+        "amount": "Montant"
+      },
+      "previousMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "today": "Aujourd’hui",
+      "views": {
+        "list": "Liste",
+        "calendar": "Calendrier"
+      },
+      "empty": {
+        "title": "Suivez vos charges fixes, abonnements et salaire",
+        "description": "Voyez mois par mois ce qu’il reste à payer et ce qui l’est déjà. Ajoutez-les un par un, ou laissez FlyBudget les rechercher dans les transactions que vous avez déjà."
+      },
+      "emptyMonth": {
+        "title": "Aucune transaction récurrente ce mois-ci",
+        "description": "Rien n’est prévu pour ce mois."
+      }
+    }
+  },
+  "reports": {
+    "builder": {
+      "title": "Rapport personnalisé",
+      "export": "Exporter",
+      "update": "Mettre à jour",
+      "sections": {
+        "chartType": "Type de graphique",
+        "mode": "Affichage",
+        "groupBy": "Regrouper par",
+        "balanceType": "Montants",
+        "dateRange": "Période",
+        "accounts": "Comptes",
+        "categories": "Catégories"
+      },
+      "modes": {
+        "total": "Total",
+        "time": "Évolution"
+      },
+      "groupByLabel": "Regrouper par",
+      "groupBy": {
+        "category": "Catégorie",
+        "categoryGroup": "Groupe de catégories",
+        "payee": "Bénéficiaire",
+        "account": "Compte",
+        "month": "Mois"
+      },
+      "balanceTypes": {
+        "expense": "Dépenses",
+        "income": "Revenus",
+        "net": "Résultat"
+      },
+      "frozen": "Figé : ces dates restent fixes.",
+      "live": "Mobile : suit le mois en cours."
+    },
+    "chartType": {
+      "types": {
+        "bar": "Barres",
+        "stackedBar": "Empilé",
+        "line": "Ligne",
+        "area": "Aire",
+        "donut": "Anneau",
+        "table": "Tableau"
+      },
+      "onlyIn": {
+        "total": "{{chart}} n’est disponible que dans l’affichage « Total »",
+        "time": "{{chart}} n’est disponible que dans l’affichage « Évolution »"
+      }
+    },
+    "detail": {
+      "noData": "Aucune donnée pour cette période.",
+      "showAll": "Afficher les {{count, number}}",
+      "exportCsv": "Exporter en CSV",
+      "columns": {
+        "month": "Mois",
+        "income": "Revenus",
+        "expenses": "Dépenses",
+        "net": "Résultat",
+        "transactions": "Transactions",
+        "assets": "Actifs",
+        "liabilities": "Dettes",
+        "netWorth": "Patrimoine net",
+        "change": "Variation",
+        "savingsRate": "Taux d’épargne",
+        "category": "Catégorie",
+        "group": "Groupe",
+        "spent": "Dépensé",
+        "monthlyAverage": "Moyenne par mois",
+        "share": "Part",
+        "highestMonth": "Mois le plus élevé",
+        "shareOfAll": "Part de toutes les dépenses",
+        "payee": "Bénéficiaire",
+        "account": "Compte",
+        "amount": "Montant",
+        "date": "Date",
+        "moneyIn": "Entrées d’argent",
+        "moneyOut": "Sorties d’argent"
+      },
+      "footer": {
+        "total": "Total",
+        "monthlyAverage": "Moyenne par mois"
+      },
+      "stats": {
+        "netWorth": "Patrimoine net",
+        "change": "Variation",
+        "assets": "Actifs",
+        "liabilities": "Dettes",
+        "income": "Revenus",
+        "expenses": "Dépenses",
+        "netSavings": "Épargné",
+        "savingsRate": "Taux d’épargne",
+        "totalSpent": "Total dépensé",
+        "monthlyAverage": "Moyenne par mois",
+        "biggestCategory": "Plus grande catégorie",
+        "categories": "Catégories",
+        "shareOfAll": "Part de toutes les dépenses",
+        "moneyIn": "Entrées d’argent",
+        "moneyOut": "Sorties d’argent",
+        "net": "Résultat",
+        "dailyAverageOut": "Sorties moyennes par jour",
+        "overDays_one": "Période de {{count, number}} jour",
+        "overDays_other": "Période de {{count, number}} jours"
+      },
+      "summary": {
+        "chartTitle": "Dépenses par mois",
+        "chartSubtitle": "Dépenses après déduction des remboursements, comparées à la moyenne mensuelle",
+        "tableTitle": "Aperçu par mois"
+      },
+      "netWorth": {
+        "chartTitle": "Patrimoine net au fil du temps",
+        "chartSubtitle": "Actifs moins dettes",
+        "tableTitle": "Soldes en fin de mois"
+      },
+      "incomeExpenses": {
+        "chartTitle": "Revenus et dépenses",
+        "chartSubtitle": "Entrées et sorties d’argent par mois",
+        "tableTitle": "Aperçu par mois"
+      },
+      "spending": {
+        "chartTitle": "Dépenses par catégorie",
+        "chartTitleTop": "Top 10 des catégories",
+        "chartSubtitleTop": "Toutes les catégories figurent dans le tableau ci-dessous",
+        "tableTitle": "Toutes les catégories"
+      },
+      "trends": {
+        "chartTitle": "Dépenses au fil du temps",
+        "biggest_one": "Votre plus grande catégorie de dépenses sur cette période",
+        "biggest_other": "Vos {{count, number}} plus grandes catégories de dépenses sur cette période",
+        "biggest_many": "Vos {{count, number}} de plus grandes catégories de dépenses sur cette période",
+        "chosen_one": "{{count, number}} catégorie choisie",
+        "chosen_other": "{{count, number}} catégories choisies",
+        "tableTitle": "Par catégorie",
+        "deletedCategory": "Catégorie supprimée",
+        "picker": "Catégories ({{count, number}})",
+        "pickBiggest": "Plus grandes catégories",
+        "pickBiggestHint": "Les {{count, number}} qui ont le plus de dépenses sur la période choisie",
+        "pickUpTo": "Ou en choisir jusqu’à {{count, number}}"
+      },
+      "calendar": {
+        "chartTitle": "Calendrier des transactions",
+        "chartSubtitleNet": "Chaque jour est coloré selon le montant net : vert s’il est entré plus d’argent, rouge s’il en est sorti plus. Cliquez sur un jour pour voir les transactions.",
+        "chartSubtitle": "Le vert correspond aux entrées d’argent, le rouge aux sorties. Cliquez sur un jour pour voir les transactions.",
+        "tableTitle": "Jours avec des transactions"
+      },
+      "day": {
+        "count_one": "{{count, number}} transaction",
+        "count_other": "{{count, number}} transactions",
+        "count_many": "{{count, number}} de transactions",
+        "moneyIn": "· {{amount}} en entrée",
+        "moneyOut": "· {{amount}} en sortie",
+        "noPayee": "Aucun bénéficiaire",
+        "split": "Fractionnée ({{count, number}})",
+        "uncategorized": "Sans catégorie"
+      }
+    },
+    "pickers": {
+      "allSelected": "Tout est sélectionné",
+      "selectAll": "Tout sélectionner",
+      "groupCategories": "Catégories de {{name}}"
+    },
+    "saved": {
+      "list": "Rapports enregistrés",
+      "modal": {
+        "save": "Enregistrer le rapport",
+        "update": "Mettre à jour le rapport",
+        "name": "Nom du rapport",
+        "nameLabel": "Nom du rapport",
+        "placeholder": "p. ex. Dépenses mensuelles par bénéficiaire",
+        "updateButton": "Mettre à jour"
+      },
+      "undo": {
+        "create": "Créer le rapport \"{{name}}\"",
+        "edit": "Modifier le rapport",
+        "delete": "Supprimer le rapport \"{{name}}\""
+      }
+    },
+    "table": {
+      "name": "Nom",
+      "amount": "Montant",
+      "total": "Total",
+      "month": "Mois"
+    },
+    "page": {
+      "title": "Rapports",
+      "editLayout": "Modifier la disposition",
+      "customReport": "Rapport personnalisé",
+      "dateRange": "Période",
+      "ownRange_one": "{{count, number}} widget conserve sa propre période",
+      "ownRange_other": "{{count, number}} widgets conservent leur propre période",
+      "empty": {
+        "title": "Ce tableau de bord est vide",
+        "description": "Ajoutez des graphiques, comme le patrimoine net, les tendances de dépenses ou un calendrier des transactions, ou créez votre propre rapport et épinglez-le ici."
+      }
+    },
+    "dashboard": {
+      "new": "Nouveau tableau de bord",
+      "name": "Nom du tableau de bord",
+      "namePlaceholder": "p. ex. Bilan annuel",
+      "create": "Créer",
+      "renameMenu": "Renommer le tableau de bord…",
+      "renameTitle": "Renommer le tableau de bord",
+      "rename": "Renommer",
+      "delete": "Supprimer le tableau de bord",
+      "deleteMessage": "Supprimer \"{{name}}\" et ses widgets ? Les rapports personnalisés enregistrés sont conservés.",
+      "addWidget": "Ajouter un widget",
+      "builtinReports": "Rapports",
+      "customReports": "Rapports personnalisés",
+      "newCustomReport": "Nouveau rapport personnalisé…"
+    },
+    "widget": {
+      "open": "Ouvrir",
+      "editReport": "Modifier le rapport",
+      "renameMenu": "Renommer…",
+      "dateRangeMenu": "Période…",
+      "freeze": "Figer les dates",
+      "unfreeze": "Libérer",
+      "useDashboardRange": "Utiliser la période du tableau de bord",
+      "moveTo": "Déplacer vers {{name}}",
+      "remove": "Retirer du tableau de bord",
+      "frozen": "Figé",
+      "ownRange": "Période propre",
+      "renameTitle": "Renommer le widget",
+      "name": "Nom",
+      "rename": "Renommer",
+      "rangeModal": {
+        "title": "Période",
+        "follow": "Suivre le tableau de bord",
+        "ownHint": "Ignore la période du tableau de bord",
+        "frozenNote": "Figé : ce widget continue d’afficher ces mois.",
+        "liveNote": "Mobile : ce widget suit le mois en cours."
+      },
+      "view": {
+        "dashboard": "Tableau de bord",
+        "saveHint": "Afficher ces réglages dans le widget du tableau de bord",
+        "save": "Enregistrer dans le widget",
+        "notSaved": "Non enregistré : le widget du tableau de bord est inchangé",
+        "following": "Suit le tableau de bord ({{range}})",
+        "keepsDates": "Ce widget conserve ces dates",
+        "ownRange": "Ce widget a sa propre période"
+      },
+      "undo": {
+        "edit": "Modifier le widget de rapport",
+        "remove": "Supprimer le widget de rapport"
+      }
+    },
+    "builtin": {
+      "summary": {
+        "label": "Résumé",
+        "description": "Revenus, dépenses et moyennes mensuelles",
+        "totalIncome": "Total des revenus",
+        "totalExpenses": "Total des dépenses",
+        "avgMonthly": "Dépenses moy. par mois",
+        "avgPerTransaction": "Moy. par transaction"
+      },
+      "netWorth": {
+        "label": "Patrimoine net",
+        "description": "Actifs, dettes et patrimoine net au fil du temps"
+      },
+      "incomeExpenses": {
+        "label": "Revenus et dépenses",
+        "description": "Entrées et sorties d’argent par mois"
+      },
+      "spending": {
+        "label": "Dépenses par catégorie",
+        "description": "Où est parti votre argent, par catégorie"
+      },
+      "spendingTrends": {
+        "label": "Tendances de dépenses",
+        "description": "Évolution dans le temps des dépenses de vos plus grandes catégories",
+        "biggest_one": "Plus grande catégorie de dépenses",
+        "biggest_other": "{{count, number}} plus grandes catégories de dépenses"
+      },
+      "calendar": {
+        "label": "Calendrier des transactions",
+        "description": "Entrées et sorties d’argent par jour"
+      }
+    },
+    "charts": {
+      "netWorth": {
+        "netWorth": "Patrimoine net",
+        "assets": "Actifs",
+        "liabilities": "Dettes",
+        "netWorthValue": "Patrimoine net : {{amount}}",
+        "assetsValue": "Actifs : {{amount}}",
+        "liabilitiesValue": "Dettes : {{amount}}"
+      },
+      "income": "Revenus",
+      "expenses": "Dépenses",
+      "net": "Résultat",
+      "spent": "Dépensé",
+      "total": "Total",
+      "monthlyAverage": "Moyenne par mois",
+      "average": "Moy. {{amount}}",
+      "uncategorized": "Sans catégorie",
+      "deletedCategory": "Catégorie supprimée",
+      "runningTotal": "Total cumulé ce mois-ci",
+      "captionRunningTotal": "{{caption}} · total cumulé",
+      "seriesValue": "{{name}} : {{amount}}",
+      "shareOf": "{{percent}} % de {{total}}",
+      "empty": {
+        "message": "Aucune donnée pour cette période",
+        "hint": "Ajoutez des transactions ou choisissez une période plus longue."
+      }
+    },
+    "calendar": {
+      "dayLabel": "{{day}} : {{income}} en entrée, {{expenses}} en sortie",
+      "moreOut": "Plus de sorties",
+      "moreIn": "Plus d’entrées",
+      "in": "Entrées : {{amount}}",
+      "out": "Sorties : {{amount}}",
+      "net": "Résultat : {{amount}}",
+      "transactions_one": "{{count, number}} transaction",
+      "transactions_other": "{{count, number}} transactions",
+      "transactions_many": "{{count, number}} de transactions",
+      "noTransactions": "Aucune transaction"
+    }
+  },
+  "rules": {
+    "title": "Règles",
+    "hint": "Les règles sont exécutées de haut en bas sur les transactions nouvelles et importées. Chaque règle qui correspond est appliquée, et une règle située plus haut dans la liste l’emporte si deux règles définissent la même chose.",
+    "search": "Rechercher des règles…",
+    "run": "Exécuter les règles",
+    "add": "Ajouter une règle",
+    "noMatches": "Aucune règle trouvée pour votre recherche.",
+    "empty": {
+      "title": "Laissez les règles faire le tri",
+      "description": "Les règles catégorisent, renomment et fractionnent les transactions pour vous dès leur arrivée, par exemple « le bénéficiaire contient Netflix → Streaming ». Vous pouvez aussi créer une règle à partir d’une transaction.",
+      "add": "Ajouter votre première règle"
+    },
+    "count": {
+      "filtered_one": "{{shown, number}} sur {{count, number}} règle",
+      "filtered_other": "{{shown, number}} sur {{count, number}} règles",
+      "filtered_many": "{{shown, number}} sur {{count, number}} de règles",
+      "summary": "{{rules}} · {{enabled}}",
+      "rules_one": "{{count, number}} règle",
+      "rules_other": "{{count, number}} règles",
+      "rules_many": "{{count, number}} de règles",
+      "enabled_one": "{{count, number}} activée",
+      "enabled_other": "{{count, number}} activées",
+      "enabled_many": "{{count, number}} d'activées"
+    },
+    "row": {
+      "enable": "Activer la règle",
+      "disable": "Désactiver la règle",
+      "enabled": "Activée",
+      "disabled": "Désactivée",
+      "if": "Si",
+      "then": "Alors",
+      "and": "et",
+      "or": "ou",
+      "everyTransaction": "Toute transaction",
+      "actions": "Actions de la règle",
+      "edit": "Modifier",
+      "duplicate": "Dupliquer",
+      "apply": "Appliquer aux transactions existantes",
+      "moveUp": "Monter",
+      "moveDown": "Descendre"
+    },
+    "delete": {
+      "title": "Supprimer la règle",
+      "message": "Supprimer cette règle ? Les transactions qu’elle a déjà modifiées restent telles quelles."
+    },
+    "editor": {
+      "newTitle": "Nouvelle règle",
+      "editTitle": "Modifier la règle",
+      "duplicateTitle": "Dupliquer la règle",
+      "match": "<strong>Si</strong> <choice></choice> conditions sont remplies",
+      "matchLabel": "Comment les conditions sont combinées",
+      "matchAll": "toutes les",
+      "matchAny": "l’une des",
+      "noConditions": "Aucune condition : cette règle s’applique à toutes les transactions.",
+      "addCondition": "Ajouter une condition",
+      "then": "Alors",
+      "addAction": "Ajouter une action",
+      "applyAfterSave": "Appliquer aux transactions existantes après l’enregistrement",
+      "saving": "Enregistrement…",
+      "save": "Enregistrer la règle",
+      "field": "Champ",
+      "operator": "Opérateur",
+      "removeCondition": "Supprimer la condition",
+      "rangeAnd": "et",
+      "chooseMany": "Choisissez-en un ou plusieurs…",
+      "chooseOne": "Choisir…",
+      "regexExample": "p. ex. ^(carrefour|auchan)",
+      "text": "Texte…",
+      "removeValue": "Supprimer {{value}}",
+      "addValue": "Saisissez puis appuyez sur Entrée…",
+      "action": "Action",
+      "chooseCategory": "Choisir une catégorie…",
+      "choosePayee": "Choisir ou créer un bénéficiaire…",
+      "clearNotesHint": "Laissez vide pour effacer les notes",
+      "notesExample": "p. ex. #pro",
+      "splitHint": "Fractionne la transaction en plusieurs parties, chacune avec sa propre catégorie.",
+      "removeAction": "Supprimer l’action"
+    },
+    "split": {
+      "kind": "Type de montant du fractionnement",
+      "kinds": {
+        "fixed": "Montant",
+        "percent": "Pourcentage",
+        "remainder": "Reste"
+      },
+      "whatsLeft": "Ce qui reste",
+      "category": "Catégorie…",
+      "notes": "Notes",
+      "remove": "Supprimer le fractionnement",
+      "add": "Ajouter un fractionnement",
+      "over100": "Les pourcentages dépassent 100 %.",
+      "leftover": "Ce qui reste demeure sans catégorie."
+    },
+    "preview": {
+      "incomplete": "Renseignez chaque condition pour voir les transactions correspondantes",
+      "checking": "Vérification…",
+      "none": "Aucune transaction ne correspond pour l’instant",
+      "matches_one": "Correspond à {{count, number}} transaction",
+      "matches_other": "Correspond à {{count, number}} transactions",
+      "matches_many": "Correspond à {{count, number}} de transactions",
+      "latest_one": "{{matches}} · la dernière affichée",
+      "latest_other": "{{matches}} · les {{count, number}} dernières affichées",
+      "latest_many": "{{matches}} · les {{count, number}} de dernières affichées",
+      "updating": "mise à jour…"
+    },
+    "apply": {
+      "runTitle": "Exécuter les règles",
+      "ruleTitle": "Appliquer la règle aux transactions existantes",
+      "updated_one": "<strong>{{count, number}}</strong> transaction mise à jour.",
+      "updated_other": "<strong>{{count, number}}</strong> transactions mises à jour.",
+      "updated_many": "<strong>{{count, number}}</strong> de transactions mises à jour.",
+      "scope": "Quelles transactions",
+      "scopes": {
+        "uncategorized": "Uniquement sans catégorie",
+        "all": "Toutes les transactions"
+      },
+      "neverChanged": "Les transactions rapprochées, les virements et les transactions fractionnées ne sont jamais modifiés.",
+      "checking": "Vérification des transactions…",
+      "nothing": {
+        "uncategorized": "Rien à modifier : aucune transaction sans catégorie ne serait mise à jour.",
+        "all": "Rien à modifier : aucune transaction ne serait mise à jour."
+      },
+      "selectAll": "Tout sélectionner",
+      "columns": {
+        "date": "Date",
+        "payee": "Bénéficiaire",
+        "amount": "Montant",
+        "changes": "Modifications"
+      },
+      "include": "Inclure cette transaction",
+      "applying": "Application…",
+      "apply_one": "Appliquer à {{count, number}} transaction",
+      "apply_other": "Appliquer à {{count, number}} transactions",
+      "apply_many": "Appliquer à {{count, number}} de transactions",
+      "changes": {
+        "payee": "Bénéficiaire",
+        "category": "Catégorie",
+        "notes": "Notes",
+        "split": "Fractionnement",
+        "empty": "(vide)"
+      }
+    },
+    "picker": {
+      "select": "Sélectionner…",
+      "search": "Rechercher…",
+      "noMatches": "Aucun résultat"
+    },
+    "names": {
+      "deleted": "(supprimé)",
+      "uncategorized": "Sans catégorie"
+    },
+    "fields": {
+      "payee": "Bénéficiaire",
+      "payee_name": "Nom du bénéficiaire",
+      "imported_payee": "Libellé importé",
+      "notes": "Notes",
+      "amount": "Montant",
+      "direction": "Crédit / débit",
+      "category": "Catégorie",
+      "account": "Compte",
+      "date": "Date"
+    },
+    "fieldHints": {
+      "payee_name": "Le nom du bénéficiaire tel qu’il figure sur la transaction",
+      "imported_payee": "Le texte d’origine de votre banque ou du CSV, avant tout renommage",
+      "amount": "Compare le montant sans signe plus ou moins ; ajoutez « {{direction}} » pour les distinguer"
+    },
+    "direction": {
+      "inflow": "Est un crédit",
+      "outflow": "Est un débit"
+    },
+    "ops": {
+      "is": "est",
+      "is_not": "n’est pas",
+      "contains": "contient",
+      "not_contains": "ne contient pas",
+      "starts_with": "commence par",
+      "ends_with": "se termine par",
+      "regex": "correspond à la regex",
+      "one_of": "est l’un de",
+      "not_one_of": "n’est aucun de",
+      "is_empty": "est vide",
+      "is_not_empty": "n’est pas vide",
+      "gt": "est supérieur à",
+      "gte": "est au moins",
+      "lt": "est inférieur à",
+      "lte": "est au plus",
+      "between": "est compris entre",
+      "approx": "est environ",
+      "before": "est avant",
+      "after": "est après",
+      "isOn": "tombe le",
+      "isUncategorized": "n’a pas de catégorie",
+      "isCategorized": "a une catégorie"
+    },
+    "actionTypes": {
+      "set_category": "Définir la catégorie",
+      "set_payee": "Renommer le bénéficiaire",
+      "set_notes": "Définir les notes",
+      "prepend_notes": "Ajouter du texte avant les notes",
+      "append_notes": "Ajouter du texte après les notes",
+      "split": "Fractionner la transaction"
+    },
+    "summary": {
+      "quoted": "« {{text}} »",
+      "condition": {
+        "is": "{{field}} est {{value}}",
+        "is_not": "{{field}} n’est pas {{value}}",
+        "contains": "{{field}} contient {{value}}",
+        "not_contains": "{{field}} ne contient pas {{value}}",
+        "starts_with": "{{field}} commence par {{value}}",
+        "ends_with": "{{field}} se termine par {{value}}",
+        "regex": "{{field}} correspond à la regex {{value}}",
+        "one_of": "{{field}} est l’un de {{value}}",
+        "not_one_of": "{{field}} n’est aucun de {{value}}",
+        "is_empty": "{{field}} est vide",
+        "is_not_empty": "{{field}} n’est pas vide",
+        "gt": "{{field}} est supérieur à {{value}}",
+        "gte": "{{field}} est au moins {{value}}",
+        "lt": "{{field}} est inférieur à {{value}}",
+        "lte": "{{field}} est au plus {{value}}",
+        "between": "{{field}} est compris entre {{from}} et {{to}}",
+        "approx": "{{field}} est environ {{value}}",
+        "before": "{{field}} est avant {{value}}",
+        "after": "{{field}} est après {{value}}",
+        "isOn": "{{field}} tombe le {{value}}",
+        "isUncategorized": "{{field}} n’a pas de catégorie",
+        "isCategorized": "{{field}} a une catégorie"
+      },
+      "action": {
+        "setCategory": "Définir la catégorie sur {{category}}",
+        "setPayee": "Renommer le bénéficiaire en {{payee}}",
+        "setNotes": "Définir les notes sur « {{text}} »",
+        "clearNotes": "Effacer les notes",
+        "prependNotes": "Ajouter « {{text}} » avant les notes",
+        "appendNotes": "Ajouter « {{text}} » après les notes",
+        "split": "Fractionner : {{parts}}",
+        "splitPart": "{{amount}} vers {{category}}",
+        "splitRest": "le reste vers {{category}}",
+        "uncategorized": "sans catégorie"
+      }
+    },
+    "undo": {
+      "create": "Créer la règle",
+      "edit": "Modifier la règle",
+      "enable": "Activer la règle",
+      "disable": "Désactiver la règle",
+      "delete": "Supprimer la règle",
+      "reorder": "Modifier l’ordre des règles"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "tabs": {
+      "categories": "Catégories",
+      "accounts": "Comptes",
+      "connections": "Banques connectées",
+      "currencies": "Devises",
+      "data": "Données",
+      "preferences": "Préférences",
+      "server": "Serveur"
+    },
+    "footer": "FlyBudget est un logiciel libre sous licence <license>GNU AGPL v3</license>. <repo>Code source</repo>",
+    "data": {
+      "title": "Exporter les données",
+      "hint": "Téléchargez vos données pour une sauvegarde ou pour analyse.",
+      "export": {
+        "title": "Exporter les transactions",
+        "hint": "Téléchargez toutes les transactions au format CSV. Vous pouvez filtrer par période.",
+        "formatComma": "Les montants sont écrits sous la forme -12,50, avec des points-virgules entre les colonnes, selon votre notation des nombres dans <preferences>Préférences</preferences>. Les exports de rapports utilisent le même séparateur.",
+        "formatDot": "Les montants sont écrits sous la forme -12.50, avec des virgules entre les colonnes, selon votre notation des nombres dans <preferences>Préférences</preferences>. Les exports de rapports utilisent le même séparateur.",
+        "from": "De",
+        "to": "À",
+        "download": "Télécharger le CSV"
+      },
+      "backup": {
+        "title": "Sauvegarde complète",
+        "hint": "Téléchargez une sauvegarde JSON complète de toutes vos données : comptes, transactions, budgets, catégories, bénéficiaires, règles, transactions récurrentes, objectifs, rapports et tableaux de bord. Les identifiants des connexions bancaires ne sont pas inclus.",
+        "download": "Télécharger la sauvegarde"
+      },
+      "restore": {
+        "title": "Restaurer une sauvegarde",
+        "hint": "Remplacez toutes vos données par un fichier de sauvegarde. Une copie de vos données actuelles est d’abord conservée.",
+        "file": "Fichier de sauvegarde",
+        "choose": "Restaurer une sauvegarde…",
+        "restoring": "Restauration…",
+        "notBackup": "{{name}} n’est pas un fichier de sauvegarde FlyBudget.",
+        "failed": "Échec de la restauration",
+        "restored_one": "{{name}} restauré ({{count, number}} transaction).",
+        "restored_other": "{{name}} restauré ({{count, number}} transactions).",
+        "restored_many": "{{name}} restauré ({{count, number}} de transactions).",
+        "safetyCopy": "Vos données précédentes ont été conservées sous le nom {{file}}, à côté de la base de données.",
+        "confirmTitle": "Restaurer cette sauvegarde ?",
+        "confirmMessage": "Toutes vos données actuelles seront remplacées par le contenu de {{name}}. Les connexions bancaires restent liées.",
+        "confirm": "Remplacer mes données"
+      }
+    },
+    "preferences": {
+      "title": "Préférences",
+      "saved": "Les réglages sont enregistrés automatiquement dans votre navigateur.",
+      "savedDemo": "Les réglages sont conservés dans cet onglet tant que vous essayez la démo.",
+      "reset": {
+        "button": "Rétablir les valeurs par défaut",
+        "title": "Rétablir les préférences",
+        "message": "Voulez-vous vraiment rétablir toutes les préférences aux valeurs par défaut ?",
+        "confirm": "Rétablir"
+      },
+      "language": {
+        "title": "Langue",
+        "automatic": "Automatique ({{language}})",
+        "hint": "Automatique utilise la langue de votre appareil si FlyBudget la propose, sinon l’anglais."
+      },
+      "theme": {
+        "title": "Thème",
+        "light": "Clair",
+        "dark": "Sombre",
+        "system": "Système"
+      },
+      "sidebar": {
+        "title": "Barre latérale",
+        "pinned": "Épinglée",
+        "pinnedHint": "Toujours ouverte",
+        "autoHide": "Masquage automatique",
+        "autoHideHint": "Repliée, s’ouvre au survol"
+      },
+      "icons": {
+        "title": "Icônes",
+        "merchant": "Bénéficiaire",
+        "merchantHint": "Logos des bénéficiaires (ou initiales colorées) à côté de leurs noms",
+        "category": "Catégorie",
+        "categoryHint": "Icônes emoji à côté des noms de catégories",
+        "account": "Compte",
+        "accountHint": "Logos des comptes (ou initiales colorées) à côté des noms de comptes",
+        "show": "Afficher",
+        "hide": "Masquer"
+      },
+      "amounts": {
+        "title": "Montants",
+        "hint": "Comment les montants sont affichés et saisis sur cet appareil. Automatique suit la langue de votre appareil. Vous pouvez toujours saisir 12,50 ou 12.50.",
+        "numberFormat": "Notation des nombres",
+        "automatic": "Automatique",
+        "symbolPosition": "Position du symbole monétaire",
+        "currencySymbol": "Symbole monétaire",
+        "currencySymbolFor": "Symbole pour {{currency}}",
+        "position": {
+          "auto": "Automatique",
+          "before": "Avant",
+          "after": "Après"
+        },
+        "automaticHint": "Automatique écrit le montant comme il est d’usage pour {{currency}}. Les symboles des autres devises se trouvent dans <currencies>Devises</currencies>.",
+        "symbolHint": "3 caractères maximum (p. ex. $, €, EUR, kr). Ou choisissez la devise de votre budget dans <currencies>Devises</currencies>.",
+        "example": "Exemple :"
+      },
+      "dateFormat": {
+        "title": "Format de date"
+      }
+    },
+    "accounts": {
+      "title": "Ordre des comptes",
+      "hint": "Faites glisser pour ordonner les comptes dans la barre latérale.",
+      "empty": "Pas encore de comptes. Ajoutez-en un depuis la page Comptes.",
+      "onBudget": "Dans le budget",
+      "offBudget": "Hors budget"
+    },
+    "connections": {
+      "title": "Banques connectées",
+      "hint": "Importez automatiquement les transactions de votre banque.",
+      "europeanBanks": "Banques européennes",
+      "synced_one": "Synchronisation avec {{provider}} terminée : {{count, number}} nouvelle transaction importée.",
+      "synced_other": "Synchronisation avec {{provider}} terminée : {{count, number}} nouvelles transactions importées.",
+      "synced_many": "Synchronisation avec {{provider}} terminée : {{count, number}} nouvelles transactions importées.",
+      "syncing": "Synchronisation...",
+      "syncAll": "Tout synchroniser",
+      "addAnotherBank": "Ajouter une autre banque",
+      "addAnotherConnection": "Ajouter une autre connexion",
+      "noBanks": "Aucune banque connectée via {{provider}} pour l’instant.",
+      "connectBank": "Connecter une banque",
+      "configuration": "Configuration de {{provider}}",
+      "plaidHint": "Saisissez vos identifiants d’API Plaid pour activer les connexions bancaires.",
+      "simplefinHint": "Saisissez votre jeton de configuration SimpleFIN pour activer les connexions bancaires.",
+      "enableBankingHint": "Banques européennes (EEE), via la DSP2. Gratuit avec votre propre application Enable Banking, pour vos propres comptes.",
+      "enableBankingApp": "Application Enable Banking"
+    },
+    "server": {
+      "version": "Version {{version}}",
+      "local": {
+        "title": "Où se trouvent vos données",
+        "demo": "Dans ce navigateur (démo)",
+        "demoHint": "Cette démo fonctionne entièrement dans votre navigateur : ce que vous modifiez n’est envoyé ni enregistré nulle part. Dans l’application, votre budget est un fichier sur votre ordinateur ou sur un serveur que vous gérez vous-même.",
+        "computer": "Sur cet ordinateur",
+        "computerHint": "Votre budget est un fichier sur cet ordinateur et FlyBudget ne communique avec lui que via son propre serveur local. Rien n’est envoyé à FlyBudget ni à des tiers ; lors de la synchronisation bancaire, seul Plaid, SimpleFIN ou Enable Banking est contacté si vous connectez une banque."
+      },
+      "selfHost": {
+        "title": "Utilisez FlyBudget sur votre téléphone et vos autres appareils",
+        "hint": "Faites tourner FlyBudget sur un serveur que vous gérez vous-même, comme un serveur domestique ou un petit serveur cloud, et connectez-vous depuis n’importe quel navigateur. Vos données déménagent sur ce serveur ; personne d’autre ne les héberge.",
+        "guide": "Lire le guide d’auto-hébergement",
+        "backup": "Faites d’abord une sauvegarde"
+      },
+      "offline": {
+        "title": "Copie hors ligne",
+        "keep": "Conserver une copie de mon budget sur cet appareil",
+        "hint": "Si FlyBudget ne parvient pas à joindre le serveur, il s’ouvre avec ce que ce navigateur a chargé en dernier. Vous pouvez tout consulter et ajouter de nouvelles transactions ; elles seront envoyées dès que la connexion sera rétablie. La copie est supprimée quand vous vous déconnectez. Désactivez cette option sur un ordinateur partagé.",
+        "waiting_one": "{{count, number}} transaction enregistrée sur cet appareil attend d’être envoyée.",
+        "waiting_other": "{{count, number}} transactions enregistrées sur cet appareil attendent d’être envoyées.",
+        "waiting_many": "{{count, number}} de transactions enregistrées sur cet appareil attendent d’être envoyées."
+      },
+      "security": {
+        "title": "Contrôle de sécurité",
+        "checking": "Vérification de votre serveur…",
+        "allGood": "Tout semble en ordre pour la façon dont vous venez de vous connecter.",
+        "warnings_one": "{{count, number}} point à examiner. Chaque point se règle avec un paramètre dans votre docker-compose.yml.",
+        "warnings_other": "{{count, number}} points à examiner. Chaque point se règle avec un paramètre dans votre docker-compose.yml.",
+        "warnings_many": "{{count, number}} de points à examiner. Chaque point se règle avec un paramètre dans votre docker-compose.yml.",
+        "version": "Version {{version}}.",
+        "passed": "OK",
+        "warning": "Avertissement"
+      },
+      "checks": {
+        "httpsSecure": "La connexion est chiffrée (HTTPS)",
+        "httpsLocal": "Connecté depuis le même ordinateur que le serveur",
+        "httpsMissing": "Pas de HTTPS : les mots de passe et les données sont envoyés sans chiffrement",
+        "httpsMissingFix": "Placez FlyBudget derrière un reverse proxy avec HTTPS (Caddy, Nginx, Traefik) ou un VPN, et définissez <env>FLYBUDGET_TRUST_PROXY</env>.",
+        "trustProxyOk": "Les réglages du reverse proxy correspondent à votre mode de connexion",
+        "trustProxyUntrusted": "Un reverse proxy se trouve devant FlyBudget, mais il n’est pas approuvé",
+        "trustProxyUntrustedFix": "Définissez <env>FLYBUDGET_TRUST_PROXY=1</env> (le nombre de proxys devant FlyBudget) afin que HTTPS et les adresses des clients soient reconnus.",
+        "trustProxyUnneeded": "FLYBUDGET_TRUST_PROXY est défini, mais cette requête est arrivée sans proxy",
+        "trustProxyUnneededFix": "Si vous vous connectez directement, supprimez <env>FLYBUDGET_TRUST_PROXY</env> : sinon, des clients peuvent falsifier leur adresse et contourner la limite de tentatives de connexion.",
+        "allowedHostsOk": "Ne répond qu’aux adresses que vous avez autorisées",
+        "allowedHostsMissing": "Répond à n’importe quel nom d’hôte",
+        "allowedHostsMissingFix": "Définissez <env>FLYBUDGET_ALLOWED_HOSTS</env> sur l’adresse que vous utilisez, p. ex. <env>FLYBUDGET_ALLOWED_HOSTS=budget.example.com</env>.",
+        "encryptionKeyOk": "Les données des connexions bancaires sont stockées chiffrées",
+        "encryptionKeyMissing": "Les données des connexions bancaires ne sont pas chiffrées",
+        "encryptionKeyMissingFix": "Définissez <env>FLYBUDGET_DATA_KEY_FILE</env> sur un fichier contenant une clé aléatoire (voir le guide d’auto-hébergement).",
+        "passwordOk": "Un mot de passe protège ce serveur",
+        "passwordMissing": "Aucun mot de passe n’est encore défini"
+      },
+      "devices": {
+        "title": "Appareils connectés",
+        "hint": "Navigateurs connectés à ce serveur. Déconnectez les appareils que vous ne reconnaissez pas, puis changez le mot de passe.",
+        "loadFailed": "Impossible de charger les appareils.",
+        "thisDevice": "Cet appareil",
+        "active": "Actif {{active}} · connecté {{signedIn}}",
+        "signedIn": "Connecté {{signedIn}}",
+        "signOut": "Se déconnecter",
+        "signOutDevice": "Déconnecter {{name}}",
+        "signOutOthers": "Déconnecter tous les autres appareils"
+      },
+      "password": {
+        "title": "Changer le mot de passe",
+        "hint": "Ce mot de passe protège votre serveur FlyBudget. Si vous le changez, tous les autres appareils seront déconnectés.",
+        "current": "Mot de passe actuel",
+        "new": "Nouveau mot de passe",
+        "confirm": "Confirmer le nouveau mot de passe",
+        "submit": "Changer le mot de passe",
+        "tooShort_one": "Utilisez au moins {{count, number}} caractère.",
+        "tooShort_other": "Utilisez au moins {{count, number}} caractères.",
+        "mismatch": "Les nouveaux mots de passe ne correspondent pas.",
+        "changed": "Mot de passe modifié. Les autres appareils ont été déconnectés."
+      },
+      "signOut": {
+        "title": "Se déconnecter",
+        "hint": "Déconnectez-vous de FlyBudget dans ce navigateur.",
+        "button": "Se déconnecter"
+      }
+    },
+    "currencies": {
+      "title": "Devises",
+      "hint": "Votre budget n’a qu’une seule devise. Les comptes peuvent chacun avoir la leur : leurs montants restent dans cette devise, et le budget et les rapports les convertissent dans la vôtre au taux de change du jour.",
+      "learnMore": "Comment fonctionnent les devises",
+      "budget": {
+        "title": "Devise du budget",
+        "hint": "La devise dans laquelle votre budget, vos rapports et votre patrimoine net sont calculés. Vous pouvez la corriger tant qu’aucun compte dans une autre devise n’a de transactions.",
+        "chooseHint": "Choisissez la devise de vos montants. Rien n’est converti : vous indiquez seulement de quelle devise il s’agit, afin de pouvoir ajouter des comptes dans d’autres devises.",
+        "change": "Modifier",
+        "use": "Utiliser cette devise"
+      },
+      "values": {
+        "title": "Valeurs en {{currency}}",
+        "missing_one": "Pour {{count, number}} transaction en {{currencies}}, il n’y a pas encore de taux de change pour ce jour, donc le budget ne la compte pas encore. Ajoutez un taux ci-dessous, ou activez le téléchargement.",
+        "missing_other": "Pour {{count, number}} transactions en {{currencies}}, il n’y a pas encore de taux de change pour ces jours, donc le budget ne les compte pas encore. Ajoutez un taux ci-dessous, ou activez le téléchargement.",
+        "missing_many": "Pour {{count, number}} de transactions en {{currencies}}, il n’y a pas encore de taux de change pour ces jours, donc le budget ne les compte pas encore. Ajoutez un taux ci-dessous, ou activez le téléchargement.",
+        "hint": "Chaque transaction dans une autre devise a une valeur en {{currency}}. Les valeurs restent ce qu’elles étaient si un taux change ; recalculez-les après avoir corrigé un taux.",
+        "recalculate": "Recalculer d’après les taux",
+        "updated_one": "{{count, number}} valeur mise à jour.",
+        "updated_other": "{{count, number}} valeurs mises à jour.",
+        "updated_many": "{{count, number}} de valeurs mises à jour.",
+        "nothingToUpdate": "Rien à mettre à jour.",
+        "typedInStay": "Les valeurs que vous avez saisies vous-même sont conservées."
+      },
+      "rates": {
+        "title": "Taux de change",
+        "hint": "Un jour sans taux utilise le taux antérieur le plus proche, jusqu’à un mois en arrière. Un taux que vous saisissez prime sur un taux téléchargé pour ce jour.",
+        "typedIn": "saisi à la main",
+        "noRecentRate": "Aucun taux au cours du dernier mois",
+        "currency": "Devise",
+        "day": "Jour",
+        "rate": "1 {{currency}} en {{budget}}",
+        "add": "Ajouter un taux",
+        "invalid": "Saisissez le taux sous forme de nombre positif, comme 1,0812.",
+        "typedInTitle": "Taux que vous avez saisis vous-même",
+        "delete": "Supprimer le taux de {{currency}} du {{date}}"
+      },
+      "download": {
+        "title": "Télécharger les taux",
+        "hint": "Les taux de référence quotidiens de la Banque centrale européenne, depuis {{host}} (Frankfurter, open source). Seuls des codes de devises et des dates sont envoyés, jamais rien sur votre budget. Désactivé tant que vous ne l’activez pas ; ensuite, une vérification a lieu toutes les quelques heures.",
+        "notInDemo": "Non disponible dans la démo : vous pouvez saisir les taux vous-même ci-dessus.",
+        "enable": "Télécharger les taux de référence de la BCE",
+        "downloading": "Téléchargement…",
+        "now": "Télécharger maintenant",
+        "last": "Dernier téléchargement : {{date}}",
+        "never": "Pas encore téléchargé",
+        "unsupported": "{{status}}. La BCE n’a pas de taux pour {{currencies}} : saisissez-les vous-même.",
+        "server": "Serveur (facultatif, pour votre propre Frankfurter)",
+        "saveServer": "Enregistrer le serveur",
+        "hintNoServer": "Les taux de référence quotidiens de la Banque centrale européenne, depuis le serveur de taux (Frankfurter, open source). Seuls des codes de devises et des dates sont envoyés, jamais rien sur votre budget. Désactivé tant que vous ne l’activez pas ; ensuite, une vérification a lieu toutes les quelques heures."
+      },
+      "display": {
+        "title": "Comment les montants sont écrits",
+        "hint": "Sur cet appareil. Automatique écrit chaque devise comme il est d’usage là-bas : 1 234,56 zł, $1,234.56, CHF 1’234.56 (la notation des nombres se règle dans Préférences). La position de {{budget}} est celle définie dans Préférences.",
+        "symbol": "Symbole pour {{currency}}",
+        "position": "Position du symbole pour {{currency}}",
+        "autoBefore": "Automatique (avant)",
+        "autoAfter": "Automatique (après)",
+        "before": "Avant",
+        "after": "Après"
+      }
+    },
+    "categories": {
+      "sections": {
+        "income": "Revenus",
+        "expense": "Dépenses"
+      },
+      "createGroup": "Créer un groupe",
+      "groupNamePlaceholder": "Nom du groupe...",
+      "addGroup": "Ajouter un groupe",
+      "noGroups": "Pas encore de groupes.",
+      "reorderGroup": "Faites glisser pour déplacer le groupe",
+      "reorderCategory": "Faites glisser pour déplacer {{name}}",
+      "editCategory": "Modifier {{name}}",
+      "editGroup": "Modifier",
+      "noCategories": "Pas encore de catégories.",
+      "pickIcon": "Choisir une icône",
+      "categoryNamePlaceholder": "Nom de la catégorie...",
+      "addCategory": "Ajouter une catégorie",
+      "createCategory": "Créer une catégorie",
+      "deleteGroup": {
+        "title": "Supprimer le groupe",
+        "message": "Supprimer \"{{name}}\" et toutes ses catégories ? Cette action est irréversible."
+      },
+      "deleteEmpty": {
+        "title": "Supprimer la catégorie",
+        "message": "Supprimer \"{{name}}\" ? Cette action est irréversible."
+      },
+      "deleteModal": {
+        "title": "Supprimer la catégorie",
+        "summary_one": "<name>{{name}}</name> contient <count>{{count, number}}</count> transaction. Choisissez d’abord vers quelle catégorie la déplacer.",
+        "summary_other": "<name>{{name}}</name> contient <count>{{count, number}}</count> transactions. Choisissez d’abord vers quelle catégorie les déplacer.",
+        "summary_many": "<name>{{name}}</name> contient <count>{{count, number}}</count> de transactions. Choisissez d’abord vers quelle catégorie les déplacer.",
+        "allocations": "Les montants budgétisés de cette catégorie seront supprimés.",
+        "moveTo": "Déplacer les transactions vers",
+        "select": "Choisir une catégorie...",
+        "confirm": "Déplacer et supprimer"
+      },
+      "undo": {
+        "createGroup": "Créer le groupe \"{{name}}\"",
+        "renameGroup": "Renommer le groupe",
+        "deleteGroup": "Supprimer le groupe \"{{name}}\"",
+        "reorderGroups": "Modifier l’ordre des groupes",
+        "createCategory": "Créer la catégorie \"{{name}}\"",
+        "editCategory": "Modifier la catégorie",
+        "reorderCategories": "Modifier l’ordre des catégories"
+      },
+      "edit": {
+        "title": "Modifier la catégorie",
+        "iconAndName": "Icône et nom",
+        "changeIcon": "Changer l’icône",
+        "categoryName": "Nom de la catégorie",
+        "group": "Groupe",
+        "budgetType": "Type de budget",
+        "saving": "Enregistrement..."
+      }
+    }
+  },
+  "transactions": {
+    "page": {
+      "title": "Toutes les transactions",
+      "add": "Ajouter"
+    },
+    "add": {
+      "title": "Ajouter une transaction",
+      "debit": "Débit",
+      "credit": "Crédit",
+      "amount": "Montant *",
+      "amountAria": "Montant",
+      "otherAccount": "l’autre compte",
+      "otherAmount": {
+        "received": "Montant crédité sur {{name}} ({{currency}}) *",
+        "sent": "Montant débité de {{name}} ({{currency}}) *",
+        "aria": "Montant en {{currency}}"
+      },
+      "rateHint": {
+        "typed": "Tel que votre banque l’affiche.",
+        "rate": "Au taux du {{date}} ({{rate}}). Ajustez-le à ce que votre banque affiche.",
+        "noRateReceived": "Pas de taux pour ce jour : saisissez ce qui a été crédité.",
+        "noRateSent": "Pas de taux pour ce jour : saisissez ce qui a été débité."
+      },
+      "merchant": "Bénéficiaire *",
+      "date": "Date *",
+      "account": {
+        "plain": "Compte *",
+        "from": "Compte source *",
+        "to": "Compte destinataire *",
+        "select": "Choisir un compte...",
+        "onBudget": "Dans le budget",
+        "offBudget": "Hors budget"
+      },
+      "category": "Catégorie",
+      "splitBetween": "Fractionner entre des catégories",
+      "split": "Fractionner",
+      "notes": "Notes",
+      "notesPlaceholder": "Ajouter une note...",
+      "adding": "Ajout...",
+      "saveOnDevice": "Enregistrer sur l’appareil",
+      "submit": "Ajouter la transaction"
+    },
+    "categoryPicker": {
+      "search": "Rechercher des catégories...",
+      "searchAria": "Rechercher des catégories",
+      "uncategorized": "Sans catégorie",
+      "transfer": "Virement",
+      "transferTo": "Virement : {{name}}",
+      "none": "Aucune catégorie trouvée",
+      "budgetTypes": {
+        "fixed": "Fixe",
+        "flexible": "Flexible",
+        "nonMonthly": "Non mensuel"
+      },
+      "newName": "Nom de la catégorie",
+      "newNameAria": "Nom de la nouvelle catégorie",
+      "creating": "Création...",
+      "create": "Créer",
+      "createNew": "Créer une nouvelle catégorie"
+    },
+    "categorySelect": {
+      "label": "Catégorie",
+      "uncategorized": "Sans catégorie",
+      "transfer": "Virement",
+      "transferTo": "Virement : {{name}}"
+    },
+    "categoryButton": {
+      "label": "Catégorie",
+      "placeholder": "Rechercher des catégories...",
+      "transferTo": "Virement : {{name}}",
+      "aria": "{{label}} : {{value}}"
+    },
+    "merchantSelect": {
+      "placeholder": "Rechercher des bénéficiaires...",
+      "label": "Bénéficiaire",
+      "offline": "Vous pourrez ajouter de nouveaux bénéficiaires dès que FlyBudget sera de nouveau connecté.",
+      "create": "Créer un nouveau bénéficiaire : \"{{name}}\""
+    },
+    "payeeCombobox": {
+      "label": "Bénéficiaire",
+      "newPayee": "Nouveau bénéficiaire : \"{{name}}\""
+    },
+    "payeePicker": {
+      "search": "Rechercher des bénéficiaires...",
+      "yours": "Vos bénéficiaires",
+      "none": "Aucun bénéficiaire trouvé",
+      "create": "Créer le nouveau bénéficiaire \"{{name}}\""
+    },
+    "splitParts": {
+      "category": "Catégorie du fractionnement {{n}}",
+      "amount": "Montant du fractionnement {{n}}",
+      "remove": "Supprimer le fractionnement {{n}}",
+      "notes": "Notes",
+      "notesAria": "Notes du fractionnement {{n}}",
+      "add": "Ajouter un fractionnement",
+      "balanced": "Équilibré",
+      "remaining": "{{amount}} restant",
+      "setTo": "Définir le fractionnement {{n}} sur {{amount}}"
+    },
+    "splitModal": {
+      "title": "Fractionner la transaction",
+      "thisTransaction": "Cette transaction",
+      "intro": "{{payee}} : <amount>{{amount}}</amount>. Chaque partie compte pour sa propre catégorie ; le solde du compte ne change pas.",
+      "saveFailed": "Impossible d’enregistrer le fractionnement. Réessayez.",
+      "unsplit": "Annuler le fractionnement",
+      "unsplitHint": "En refaire une seule transaction sans catégorie",
+      "saving": "Enregistrement...",
+      "save": "Enregistrer le fractionnement"
+    },
+    "filters": {
+      "search": "Rechercher par bénéficiaire ou notes…",
+      "category": "Catégorie",
+      "clearCategory": "Effacer le filtre de catégorie",
+      "presets": {
+        "thisMonth": "Ce mois-ci",
+        "last3": "3 derniers mois",
+        "thisYear": "Cette année",
+        "all": "Tout"
+      }
+    },
+    "form": {
+      "editTitle": "Modifier la transaction",
+      "newTitle": "Nouvelle transaction",
+      "date": "Date",
+      "payee": "Bénéficiaire",
+      "category": "Catégorie",
+      "split": "Fractionner",
+      "notes": "Notes",
+      "outflow": "Débit",
+      "inflow": "Crédit",
+      "save": "Enregistrer",
+      "savePaused": "Enregistrer (en pause jusqu’à ce que FlyBudget soit de nouveau connecté)",
+      "saveOnThisDevice": "Enregistrer sur cet appareil (sera envoyé dès que FlyBudget sera de nouveau connecté)",
+      "saveOnDevice": "Enregistrer sur l’appareil",
+      "splitTransaction": "Fractionner la transaction",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "splitCategory": "Catégorie du fractionnement {{n}}",
+      "splitNotes": "Notes du fractionnement {{n}}",
+      "splitAmount": "Montant du fractionnement {{n}}",
+      "removeSplit": "Supprimer le fractionnement {{n}}",
+      "addSplit": "Ajouter un fractionnement",
+      "balanced": "Équilibré",
+      "remaining": "{{amount}} restant"
+    },
+    "suggestions": {
+      "section": "Virements possibles",
+      "heading_one": "{{count, number}} virement possible entre vos comptes.",
+      "heading_other": "{{count, number}} virements possibles entre vos comptes.",
+      "heading_many": "{{count, number}} de virements possibles entre vos comptes.",
+      "explain": "Le même montant est sorti d’un compte et est entré sur un autre en quelques jours.",
+      "review": "Examiner",
+      "dismiss": "Ignorer",
+      "title": "Virements possibles",
+      "intro": "Les virements associés déplacent de l’argent entre vos comptes ; ils ne comptent donc ni comme dépenses ni comme revenus. Décochez ce qui n’est pas un virement, ou choisissez <emphasis>Pas un virement</emphasis> pour qu’ils ne soient plus proposés.",
+      "linkFailed": "Impossible d’associer les virements. Réessayez.",
+      "dismissFailed": "Impossible d’enregistrer « Pas un virement ». Réessayez.",
+      "cancel": "Annuler",
+      "linking": "Association…",
+      "link_one": "Associer {{count, number}} virement",
+      "link_other": "Associer {{count, number}} virements",
+      "link_many": "Associer {{count, number}} de virements",
+      "notice": {
+        "linked_one": "{{count, number}} virement associé.",
+        "linked_other": "{{count, number}} virements associés.",
+        "linked_many": "{{count, number}} de virements associés.",
+        "failed_one": "{{count, number}} avait été modifié et a été ignoré.",
+        "failed_other": "{{count, number}} avaient été modifiés et ont été ignorés.",
+        "interrupted": "La connexion s’est interrompue avant la fin ; examinez les autres plus tard."
+      },
+      "row": {
+        "anotherAccountFrom": "Autre compte",
+        "anotherAccountTo": "autre compte",
+        "noPayee": "Aucun bénéficiaire",
+        "side": "{{date}} · {{payee}}",
+        "amountChange": "{{sent}} → {{received}}",
+        "linkAria": "Associer {{amount}} de {{from}} vers {{to}}",
+        "notTransfer": "Pas un virement",
+        "notTransferAria": "Pas un virement : {{amount}} de {{from}} vers {{to}}"
+      }
+    },
+    "waiting": {
+      "title": "Enregistré sur cet appareil",
+      "sending": "Envoi…",
+      "offline": "Sera envoyé dès que FlyBudget sera de nouveau connecté. Pas encore dans les soldes ni le budget.",
+      "transferTo": "Virement : {{name}}",
+      "anotherAccount": "autre compte",
+      "noPayee": "Aucun bénéficiaire",
+      "transfer": "Virement",
+      "split": "Fractionnée ({{n}})",
+      "uncategorized": "Sans catégorie",
+      "withAccount": "{{detail}} · {{account}}",
+      "notSaved": "Non enregistré : {{error}}",
+      "tryAgain": "Réessayer",
+      "tryAgainAria": "Réessayer : {{name}}",
+      "discard": "Abandonner",
+      "discardAria": "Abandonner {{name}}",
+      "discardTitle": "Abandonner cette transaction ?",
+      "discardMessage": "Cette transaction n’existe que sur cet appareil et n’a pas encore été envoyée à FlyBudget. Elle sera définitivement perdue."
+    },
+    "undo": {
+      "makeTransfer": "Créer un virement",
+      "link_one": "Associer {{count, number}} virement",
+      "link_other": "Associer {{count, number}} virements",
+      "link_many": "Associer {{count, number}} de virements",
+      "notTransfer": "Pas un virement",
+      "create": "Créer la transaction",
+      "edit": "Modifier la transaction",
+      "split": "Fractionner la transaction",
+      "unsplit": "Annuler le fractionnement",
+      "delete": "Supprimer la transaction",
+      "createTransfer": "Créer un virement"
+    },
+    "csv": {
+      "dateRequired": "Une colonne de date est obligatoire",
+      "amountRequired": "Au moins une colonne de montant est obligatoire"
+    },
+    "table": {
+      "count_one": "{{count, number}} transaction",
+      "count_other": "{{count, number}} transactions",
+      "count_many": "{{count, number}} de transactions",
+      "importCsv": "Importer un CSV",
+      "add": "Ajouter une transaction",
+      "savingPaused": "L’enregistrement est en pause jusqu’à ce que FlyBudget soit de nouveau connecté",
+      "savedOnDevice": "Enregistré sur cet appareil et envoyé dès que FlyBudget sera de nouveau connecté",
+      "newTitle": "Nouvelle transaction",
+      "dayTotalHint": "En {{currency}}, au taux de chaque jour",
+      "showing_one": "{{shown, number}} transaction sur {{count, number}} affichée",
+      "showing_other": "{{shown, number}} transactions sur {{count, number}} affichées",
+      "showMore_one": "Afficher {{count, number}} de plus",
+      "showMore_other": "Afficher {{count, number}} de plus",
+      "empty": {
+        "title": "Pas encore de transactions",
+        "accountHint": "Importez un fichier CSV de votre banque, ou ajoutez des transactions à la main au fil de vos dépenses.",
+        "allHint": "Ajoutez des transactions à la main, importez un fichier CSV depuis la page d’un compte, ou connectez une banque pour les récupérer automatiquement.",
+        "import": "Importer un CSV",
+        "add": "Ajouter une transaction",
+        "connect": "Connecter une banque"
+      },
+      "notFound": {
+        "title": "Aucune transaction trouvée",
+        "filtered": "Rien ne correspond à votre recherche et à vos filtres.",
+        "here": "Il n’y a aucune transaction ici.",
+        "range": "Il n’y a aucune transaction sur cette période.",
+        "clearFilters": "Effacer les filtres",
+        "showAllDates": "Afficher toutes les dates"
+      }
+    },
+    "row": {
+      "transfer": "Virement",
+      "showPayee": "Afficher toutes les transactions de \"{{name}}\"",
+      "showCategory": "Afficher toutes les transactions dans \"{{name}}\"",
+      "split": "Fractionnée ({{n}})",
+      "goToAccount": "Aller à {{name}}"
+    },
+    "card": {
+      "transfer": "Virement",
+      "split": "Fractionnée ({{n}})",
+      "uncategorized": "Sans catégorie",
+      "reconciled": "Rapprochée"
+    },
+    "detail": {
+      "aria": "Détails de la transaction",
+      "title": "Détails de la transaction",
+      "close": "Fermer les détails",
+      "transfer": "Virement",
+      "splitHint": "Répartir cette transaction entre des catégories",
+      "editSplit": "Modifier le fractionnement",
+      "split": "Fractionner",
+      "splitCount": "Fractionnée ({{n}})",
+      "reconciled": "Cette transaction est rapprochée et ne peut pas être modifiée.",
+      "date": "Date",
+      "category": "Catégorie",
+      "uncategorized": "Sans catégorie",
+      "notTransfer": "Pas un virement",
+      "notTransferHint": "Refaire des deux côtés des transactions ordinaires",
+      "payee": "Bénéficiaire",
+      "notes": "Notes",
+      "notesPlaceholder": "Ajouter des notes à cette transaction...",
+      "recurring": "Récurrente",
+      "unlinkRecurring": "Dissocier de la transaction récurrente",
+      "createRule": "Créer une règle",
+      "delete": "Supprimer la transaction",
+      "newRule": "Nouvelle règle d’après la transaction",
+      "deleteMessage": "Voulez-vous vraiment supprimer cette transaction ? Cette action est irréversible.",
+      "notSaved": "Impossible d’enregistrer cette modification.",
+      "retryCategory": "Choisissez à nouveau pour réessayer.",
+      "retryField": "Cliquez en dehors du champ pour réessayer."
+    }
+  },
+  "undo": {
+    "toast": {
+      "undid": "Annulé : {{action}}",
+      "redid": "Rétabli : {{action}}",
+      "undo": "Annuler",
+      "redo": "Rétablir"
+    }
+  },
+  "welcome": {
+    "title": "Bienvenue sur <brand/> !",
+    "intro": "Un budget qui montre où va votre argent et donne une destination à chaque euro. Commencez par ajouter les comptes que vous souhaitez suivre.",
+    "setupTime": "Temps de configuration :",
+    "options": {
+      "plaid": {
+        "title": "Connecter avec Plaid",
+        "tag": "Gratuit",
+        "time": "~10 min + approbation",
+        "description": "Configurez-le une fois et les nouvelles transactions arrivent toutes seules. Créez un compte développeur Plaid gratuit ; Plaid approuve ensuite l’accès à vos vraies banques.",
+        "action": "Connecter Plaid"
+      },
+      "simplefin": {
+        "title": "Connecter avec SimpleFIN",
+        "tag": "1,50 $/mois",
+        "time": "~5 min",
+        "description": "Configurez-le une fois et les nouvelles transactions arrivent toutes seules, via SimpleFIN Bridge (des milliers de banques). Vous payez directement SimpleFIN.",
+        "action": "Connecter SimpleFIN"
+      },
+      "europe": {
+        "title": "Connecter une banque européenne",
+        "tag": "Gratuit",
+        "time": "~15 min",
+        "description": "Configurez-le une fois et les nouvelles transactions arrivent toutes seules, depuis des banques de toute l’Europe (DSP2), via votre propre application Enable Banking gratuite. Reconnectez-vous à votre banque tous les quelques mois.",
+        "action": "Connecter avec Enable Banking"
+      },
+      "manual": {
+        "title": "Ajouter des comptes manuellement",
+        "tag": "Sans connexion bancaire",
+        "time": "~1 min par compte",
+        "description": "Vous ajoutez vous-même chaque compte et son solde. Les transactions aussi se font à la main : téléchargez des fichiers CSV de votre banque et importez-les vous-même, ou saisissez-les une par une. Rien n’est mis à jour automatiquement.",
+        "action": "Ajouter manuellement"
+      }
+    },
+    "privacyServer": "Votre budget est sur votre propre serveur. Pas de compte FlyBudget, pas de suivi.",
+    "privacyLocal": "Votre budget reste sur cet ordinateur. Pas de compte FlyBudget, pas de suivi.",
+    "compare": "Comparer les options bancaires",
+    "skip": "Passer pour l’instant et explorer"
+  }
+}

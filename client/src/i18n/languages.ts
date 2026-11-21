@@ -2,8 +2,10 @@
 import type { Locale } from 'date-fns';
 import { enUS } from 'date-fns/locale/en-US';
 import { nl as nlDates } from 'date-fns/locale/nl';
+import { fr as frDates } from 'date-fns/locale/fr';
 import en from './locales/en.json';
 import nl from './locales/nl.json';
+import fr from './locales/fr.json';
 import { PSEUDO_CODE, pseudoDateLocale, pseudoResources } from './pseudo';
 
 export interface Language {
@@ -26,6 +28,8 @@ export const LANGUAGES = [
   { code: 'en', name: 'English', dateLocale: enUS, resources: en, listed: true },
   // i18n-ignore
   { code: 'nl', name: 'Nederlands', dateLocale: nlDates, resources: nl, listed: true },
+  // i18n-ignore
+  { code: 'fr', name: 'Français', dateLocale: frDates, resources: fr, listed: true },
 ] as const satisfies readonly Language[];
 
 export type LanguageCode = (typeof LANGUAGES)[number]['code'];
